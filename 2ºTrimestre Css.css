@@ -20,8 +20,8 @@ body{background-color:#f5f5f5;background-image: url(Imagenes/transformaciones-go
         padding-top: 1%;
         padding-bottom: 1%;}
         #botonMenu{
+            display: block;
             text-align: center;
-            padding-left: 20%;
             width: auto;
             height: auto;
             padding-top: 1%;
