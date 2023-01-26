@@ -7,13 +7,70 @@ body{background-color:#f5f5f5;background-image: url(Imagenes/transformaciones-go
     #imgInstagram{width: 5%;height: 8%;padding-right: 2%;}
     #imgTwitter{width: 5%;height: 8%;padding-right: 2%;}
     #imgFacebook{width: 5%;height: 8%;padding-right: 2%;}
-#MenuDiv{background-color: #2f353a;height: 10%; display: flex; justify-content: center; width: 100%;}
-    #logo{width: auto; height: auto;padding-left: 1%;text-align: right;padding-right: 10%;padding-top: 1%;padding-bottom: 1%;}
-    #botoneMenu{text-align: center;padding-left: 2%;width: 8%;height: 8%;}
-    #Directorio{text-align: right;padding-left: 2%;}
-    #search{text-align:left; padding-left: 2%;}
 
 
-#contenido{border: 2px; width: 80%;display: flex; justify-content: center; width: 100%;}
-    #lista{background-color:dimgray ; opacity: 95%; width: 20%; height: auto; padding-left: 2%;}
-#Animes{background-color: blue;width: 60%; height: auto;}
+    
+    #MenuDiv{background-color: #2f353a; height: 10%; display: flex; justify-content: center; width: 100%;}
+    #logo{
+        width: auto; 
+        height: auto;
+        text-align: right;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;}
+        #botonMenu{
+            text-align: center;
+            padding-left: 20%;
+            width: auto;
+            height: auto;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+        #Directorio{
+            text-align: center;
+            padding-left: 20%;
+            padding-right: 10%;
+            width: auto;
+            height: auto;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+            .dropdown{ 
+                display: inline-block; 
+                position: relative;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                width: 100%;
+                overflow: auto;
+                box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown-content a {
+                display: block;
+                color: #000000;
+                padding: 5px;
+                text-decoration: none;
+            }
+            .dropdown-content a:hover {
+                color: #FFFFFF;
+                background-color: #00A4BD;
+            }
+        #search{
+            padding-left: 20%;
+            width: auto;
+        height: auto;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 2%;
+    }
+
+
+
+#contenido{border: 2px; width: 100%;display: flex; justify-content: center;}
+    #lista{background-color:dimgray ; opacity: 95%; width: 20%; height: auto; padding-left: 2%; padding-right: 2%;}
+    #Animes{width: 60%; height: auto; padding-left: 2%;}    
