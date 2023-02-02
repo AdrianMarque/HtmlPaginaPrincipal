@@ -7,18 +7,21 @@ body{
     align-items: center;
     }
 .principal_header{text-align: right;}
-    #imgInstagram{width: 5%;height: 8%;padding-right: 2%;}
-    #imgTwitter{width: 5%;height: 8%;padding-right: 2%;}
-    #imgFacebook{width: 5%;height: 8%;padding-right: 2%;}    
-    #MenuDiv{background-color: #2f353a; height: 10%; display: flex; justify-content: center; width: 100%;}
+    #imgInstagram{width: 5vw;height: 5vw;padding-right: 2%;}
+    #imgTwitter{width: 5vw;height: 5vw;padding-right: 2%;}
+    #imgFacebook{width: 5vw;height: 5vw;padding-right: 2%;}    
+    #MenuDiv{background-color: #2f353a; height: auto; display: flex; justify-content: center; width: 100%;}
     #logo{
-        width: 60px; 
-        height: 40px;
+        width: 5%; 
+        height: auto;
         text-align: right;
         align-self: center;
-        padding-left: 100px;
-        padding-right: 10px;
+        padding-left: 20%;
+        padding-right: 10%;
         display: flex;
+    }
+    .nolink{
+        text-decoration: none;
     }
         #botonMenu{
             display: flexbox;
