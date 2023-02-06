@@ -128,25 +128,25 @@ body{
     height: auto;
     padding-left: 10%;
 }
-#contenido::-webkit-scrollbar{
+#lista{
+    background-color:dimgray ; 
+    opacity: 95%; 
+    width: 50%;
+    height: 30%; 
+    padding-left: 2%; 
+    padding-right: 2%; 
+    block-size: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: white ;
+    
+}
+#lista::-webkit-scrollbar{
     width: auto;
     height: auto;
     background-color: yellow;
     color: blue;
     
 }
-    #lista{
-        background-color:dimgray ; 
-        opacity: 95%; 
-        width: 50%;
-        height: 30%; 
-        padding-left: 2%; 
-        padding-right: 2%; 
-        block-size: 50%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        color: white ;
-        
-    }
     .button1 {
         border: none;
         color: white;
