@@ -122,22 +122,25 @@ body{
         position: relative;
         }
 #contenido{
-    width: 60%;
+    width: 100%;
     display: flex; 
-    justify-content: center;
+    grid: auto;
+    justify-content: left;
+    align-content: left;
     height: auto;
     padding-left: 10%;
 }
-#lista{
+#Lista{
     background-color:dimgray ; 
     opacity: 95%; 
-    width: 50%;
+    width: 20%;
     height: 30%; 
     padding-left: 2%; 
-    padding-right: 2%; 
+    padding-right: 2%; s
     block-size: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: white ;
+    float: left;
     
 }
 #lista::-webkit-scrollbar{
@@ -173,13 +176,25 @@ body{
         background-color: #00A4BD;
         
     }
-    #Animes{
-        width: auto; 
-        height: auto; 
-        padding-left: 5%;
-        color: white;
-        align-items: center;
+    .Animes{
+        width: 80%;
+        padding: 10%;
+        float: center;
+        margin-left: 100px;
+        height: 80%;
+        box-sizing: border-box;
+        
     } 
-    .tr{
-        border: 20px;
+    .columna{
+        float: left;
+        width: 33%;
+        padding-right: 5px;
+    }
+    .fila::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .img{
+        width: 100%;
     }
