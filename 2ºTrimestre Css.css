@@ -36,7 +36,6 @@ img{
     display: inline-block;
     vertical-align: middle;
 }
-
 .indicedenavegacion{
     display: flex;
     flex-direction: column;
@@ -144,37 +143,48 @@ img{
     font-weight: 700;
     outline: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-head{background-color: blue;}
-    #redes{text-align: right;background-color: darkslategray;}
-    #logo{width:auto;height:auto;}
-
-.principal_header{
-    text-align: right;
-    box-sizing: content-box;
-    border-radius: 2%;
+@media(min-width:1020px){
+    .indicedenavegacion .directorio .menu .opciones-menu .Conexiones{
+        padding: 15px 0 10px 10px;
+        font-size: 0;
+        text-align: center;
+        list-style-type:none;
+    }
+.indicedenavegacion .directorio .menu .opciones-menu .Conexiones li{
+    display: inline-block;
+    vertical-align: top;
 }
-    #imgInstagram{width: 5vw;height: 5vw;padding-right: 2%;}
-    #imgTwitter{width: 5vw;height: 5vw;padding-right: 2%;}
-    #imgFacebook{width: 5vw;height: 5vw;padding-right: 2%;}    
+.indicedenavegacion .directorio .menu .opciones-menu .Conexiones li a{
+    background-color: #2f353a;
+    position: relative;
+    width: 40px;
+    height: 40;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     #MenuDiv{
         background-color: #2f353a; 
         height: auto; 
