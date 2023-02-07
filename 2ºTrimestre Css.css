@@ -122,9 +122,9 @@ body{
         position: relative;
         }
 #contenido{
-    width: 100%;
-    display: flex; 
-    grid: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: left;
     align-content: left;
     height: auto;
@@ -133,14 +133,10 @@ body{
 #Lista{
     background-color:dimgray ; 
     opacity: 95%; 
-    width: 20%;
-    height: 30%; 
-    padding-left: 2%; 
-    padding-right: 2%; s
-    block-size: 50%;
+    width: auto;
+    height: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: white ;
-    float: left;
     
 }
 #lista::-webkit-scrollbar{
@@ -177,11 +173,7 @@ body{
         
     }
     .Animes{
-        width: 80%;
-        padding: 10%;
-        float: center;
-        margin-left: 100px;
-        height: 80%;
+        width: 60%;
         box-sizing: border-box;
         
     } 
