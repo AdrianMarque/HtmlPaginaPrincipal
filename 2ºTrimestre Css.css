@@ -1,6 +1,14 @@
-head{background-color: blue;}
-    #redes{text-align: right;background-color: darkslategray;}
-    #logo{width:auto;height:auto;}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -ms-text-size-adjust: 100%; /*texto desde internet explorer*/
+    -webkit-text-size-adjust: 100%; /*texto desde google chrome*/
+    -webkit-tap-highlight-color: transparent;
+}
 body{
     background-color:black;
     width: 80%;
@@ -10,6 +18,9 @@ body{
     align-content: center;
     margin: auto;
     }
+head{background-color: blue;}
+    #redes{text-align: right;background-color: darkslategray;}
+    #logo{width:auto;height:auto;}
 
 .principal_header{
     text-align: right;
