@@ -75,7 +75,6 @@ img{
 .indicedenavegacion header .directorio .menu .opciones-menu{
     display: flex;
     -ms-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     -webkit-flex-warp: wrap;
 }
 .indicedenavegacion header .directorio .menu .Lista1{
@@ -124,6 +123,7 @@ img{
     color: inherit;
     font: inherit;
     outline: none;
+    color: white;
 }
 .indicedenavegacion .directorio .menu .opciones-menu .busqueda form button{
     background-color: transparent;
