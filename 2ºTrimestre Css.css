@@ -13,11 +13,13 @@ html{
 body{
     background-color:white;
     height: 100%;
+    background-image:url(Imagenes/back);
 }
 a{
     text-decoration: none;
     outline: none;
     transition: all 0.2s linear;
+    color: white;
 }
 a:hover{
     color: #FFFFFF;
@@ -164,6 +166,16 @@ img{
     display: inline-block;
     padding: 5;
 }
+.indicedenavegacion .directorio .menu .opciones-menu .Conexiones li a::after{
+    content: "";
+    position:absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 20px;
+    background-color: white;
+    opacity: 0.1;
+}
 /*aaaaaaaaaaaaaaaaaaaaaaaaaaa*/
 .indicedenavegacion .principal{
     flex:1 0 auto;
@@ -182,72 +194,110 @@ img{
         max-width: 1000px;
     }
 }
-.margin-principal{
-    margin: -20px -10px 20px;
+@media (min-width:1200px) {
+    .indicedenavegacion .principal .principal-cont{
+        max-width: 1100px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    #MenuDiv{
-        background-color: #2f353a; 
-        height: auto; 
-        display: flex; 
-        justify-content: center; 
-        width: 100%;
-        margin: 0%;
-
+@media (min-width: 767px){
+    .indicedenavegacion .principal .principal-cont{
+        max-width: 700px;
     }
-    #logo{
-        width: 5%; 
-        height: auto;
-        text-align: right;
-        align-self: center;
-        padding-left: 20%;
-        padding-right: 10%;
-        display: flex;
+}
+.margen-principal{
+    margin: -20px -10px 20px;
+    -webkit-flex:none;
+    -ms-flex: none;
+    flex: none;
+    max-width: 100%;
+    padding: 20px 10px 0;
+}
+@media(min-width:767px){
+    .margen-principal{
+        width: 300px;
     }
-    
-
-        #Inicio{
-            float: left;
-            color:#2f353a;
-        }
-        
-        #botonMenu{
-            display: flexbox;
-            text-align: center;
-            align-self: center;
-            padding-right: 10%;
-            width: auto;
-            height: auto;
-            color: white;
-        }
-        #Directorio{
-            display: flexbox;
-            text-align: center;
-            padding-bottom: 10px;
-            padding-left: 20%;
-            padding-right: 10%;
-            width: auto;
-            height: auto;
-            color: white;
-            box-sizing: content-box;
-        }
+}
+.indicedenavegacion .principal .principal-cont .main-destacado{
+    background-color: #2f353a;
+    border-radius: 5px;
+    width: 320px;
+    height: 420px;
+    position: relative;
+}
+.indicedenavegacion .principal .principal-cont .main-destacado .titulo-destacado{
+    border-bottom: 1px solid white;
+    color: yellow;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+}
+.indicedenavegacion .principal .principal-cont .main-destacado .animes-destacado{
+    padding: 15px 0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: 0;
+    direction: ltr;
+}
+.indicedenavegacion .principal .principal-cont .main-destacado .animes-destacado ul>li a{
+    display: block;
+    padding: 10px 85px 10px 15px;
+    position: relative;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.ejemplos{
+    transition: all 0.2;
+    position: absolute;
+    padding: 10px;
+    margin: auto;
+    right: 16px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    width: auto;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    height: auto;
+}
+@media(min-width 767px){
+    .indicedenavegacion .principal .principal-cont .main-destacado .foto-anime{
+        -webkit-flex: 1;
+        -ms-flex:1;
+        flex: 1;
+    }
+}
+.indicedenavegacion .principal .principal-cont .main-destacado .foto-anime .titulo{
+    position: relative;
+    color: green;
+    padding: 20px 10px 0;
+}
+.indicedenavegacion .principal .principal-cont .main-destacado .foto-anime .titulo h2{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 5px 0;
+    margin-bottom: 0;
+    color: #3b4248;
+}
+@media(min-width){
+    .indicedenavegacion .principal .principal-cont .main-destacado .foto-anime .titulo .imagenes{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    }
+}
+.indicedenavegacion .principal .principal-cont .main-destacado .foto-anime .titulo .imagenes{
+    padding-top: 15px;
+    font-size: 0;
+}        
             .dropdown{ 
                 display: inline-block; 
                 position: relative;
@@ -276,72 +326,6 @@ img{
                 color: #FFFFFF;
                 background-color: #00A4BD;
             }
-        #search{
-        width: 10%;
-        height: 30%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        padding-right: 20%;
-        align-content:left;
-        padding-left: 10%;
-        position: relative;
-        }
-#contenido{
-    width: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: left;
-    align-content: left;
-    height: auto;
-    padding-left: 10%;
-}
-#Lista{
-    background-color:dimgray ; 
-    opacity: 95%; 
-    width: auto;
-    height: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    color: white ;
-    
-}
-#lista::-webkit-scrollbar{
-    width: auto;
-    height: auto;
-    background-color: yellow;
-    color: blue;
-    
-}
-    .button1 {
-        border: none;
-        color: white;
-        background-color: #2f353a;
-        padding: 5% 30%;
-        text-decoration: none;
-        font-size: 16px;
-        margin: 10%;
-        height: 60%;
-        width: 90%;
-        cursor: pointer;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: small;
-        border-bottom-left-radius: 5%;
-        border-bottom-right-radius: 5%;
-        border-top-right-radius: 5%;
-        border-top-left-radius: 5%;
-        align-items: center;
-        
-        
-    }
-    .button1:hover {
-        color: #FFFFFF;
-        background-color: #00A4BD;
-        
-    }
-    .Animes{
-        width: 60%;
-        box-sizing: border-box;
-        
-    } 
     .columna{
         float: left;
         width: 33%;
