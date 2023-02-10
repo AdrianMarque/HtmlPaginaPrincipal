@@ -13,7 +13,6 @@ html{
 body{
     background-color:white;
     height: 100%;
-    background-image:url(Imagenes/back);
 }
 a{
     text-decoration: none;
@@ -187,7 +186,9 @@ img{
 .indicedenavegacion .principal .principal-cont{
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 20px 15px;
+    grid-template-columns: auto auto;
+    display: grid;
 }
 @media(min-width: 1020px){
     .indicedenavegacion .principal .principal-cont{
