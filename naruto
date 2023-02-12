@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:ns1="http://www.example.org">
+  <body>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Director</th>
+      </tr>
+    </table>
+  </body>
+</html>
