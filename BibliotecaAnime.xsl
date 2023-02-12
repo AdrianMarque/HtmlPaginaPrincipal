@@ -3,45 +3,46 @@
   <xsl:param name="nombreAnime" />
     <xsl:template match="/">
         <html>
+        <link rel="stylesheet" href="2ºTrimestre Css.css"></link>
         <body>
             <xsl:for-each select="biblioteca/anime">
                 <xsl:if test="Nombre=$nombreAnime">
-                   <table style="background-color: #F2F2F2; border: 1px solid black; border-collapse: collapse;">
+                   <table class="tabla-detalle">
                         <tr>
-                            <th style="border: 1px solid black; padding: 8px;">Nombre</th>
-                            <td style="border: 1px solid black; padding: 8px;"><xsl:value-of select="Nombre" /></td>
+                            <th>Nombre</th>
+                            <td><xsl:value-of select="Nombre" /></td>
                         </tr>
                         <tr>
-                            <th style="border: 1px solid black; padding: 8px;">Director</th>
-                            <td style="border: 1px solid black; padding: 8px;"><xsl:value-of select="Director" /></td>
+                            <th>Director</th>
+                            <td><xsl:value-of select="Director" /></td>
                         </tr>
                         <tr>
-                            <th style="border: 1px solid black; padding: 8px;">Año</th>
-                            <td style="border: 1px solid black; padding: 8px;"><xsl:value-of select="Año" /></td>
+                            <th>Año</th>
+                            <td><xsl:value-of select="Año" /></td>
                         </tr>
                         <tr>
-                            <th style="border: 1px solid black; padding: 8px;">Seiyuu</th>
-                            <td style="border: 1px solid black; padding: 8px;"><xsl:value-of select="Seiyuu" /></td>
+                            <th>Seiyuu</th>
+                            <td><xsl:value-of select="Seiyuu" /></td>
                         </tr>
                         <tr>
-                            <th style="border: 1px solid black; padding: 8px;">Genero</th>
-                            <td style="border: 1px solid black; padding: 8px;"><xsl:value-of select="Genero" /></td>
+                            <th>Genero</th>
+                            <td><xsl:value-of select="Genero" /></td>
                         </tr>
                         <tr>
-                            <th style="border: 1px solid black; padding: 8px;">Sinopsis</th>
-                            <td style="border: 1px solid black; padding: 8px;"><xsl:value-of select="Sinopsis" /></td>
+                            <th>Sinopsis</th>
+                            <td><xsl:value-of select="Sinopsis" /></td>
                         </tr>
                         <tr>
-                            <th style="border: 1px solid black; padding: 8px;">Criticas</th>
-                            <td style="border: 1px solid black; padding: 8px;"><xsl:value-of select="Criticas" /></td>
+                            <th>Criticas</th>
+                            <td><xsl:value-of select="Criticas" /></td>
                         </tr>
                         <tr>
-                            <th style="border: 1px solid black; padding: 8px;">Finalizado</th>
-                            <td style="border: 1px solid black; padding: 8px;"><xsl:value-of select="Finalizado" /></td>
+                            <th>Finalizado</th>
+                            <td><xsl:value-of select="Finalizado" /></td>
                         </tr>
                         <tr>
-                            <th style="border: 1px solid black; padding: 8px;">Trailer</th>
-                            <td style="border: 1px solid black; padding: 8px;"><xsl:value-of select="Trailer" /></td>
+                            <th>Trailer</th>
+                            <td><xsl:value-of select="Trailer" /></td>
                         </tr>
                     </table>
                 </xsl:if>
