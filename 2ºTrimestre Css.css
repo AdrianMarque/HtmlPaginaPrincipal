@@ -210,6 +210,11 @@ img{
         max-width: 700px;
     }
 }
+@media (min-width: 3440px){
+    .indicedenavegacion .principal .principal-cont{
+        max-width: 3200px;
+    }
+}
 .margen-principal{
     margin: -20px -10px 20px;
     -webkit-flex:none;
@@ -306,17 +311,13 @@ img{
     padding-top: 15px;
     font-size: 0;
 }        
-            
-    .columna{
-        float: left;
-        width: 33%;
-        padding-right: 5px;
-    }
-    .fila::after{
-        content: "";
-        clear: both;
-        display: table;
-    }
-.h2{
-    color: #FFFFFF;
+.columna{
+    float: left;
+    width: 33%;
+    padding-right: 5px;
+}
+.fila::after{
+    content: "";
+    clear: both;
+    display: table;
 }
