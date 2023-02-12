@@ -13,6 +13,8 @@ html{
 body{
     background-color:white;
     height: 100%;
+    background-image: url(Imagenes/LogoFemi.jpg);
+    background-image: url(Imagenes/LogoGoku.jpg);
 }
 a{
     text-decoration: none;
@@ -24,6 +26,10 @@ a:hover{
     color: #FFFFFF;
     background-color: #00A4BD;
     cursor: pointer;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 ul{
     margin: 0;
@@ -166,7 +172,6 @@ img{
     padding: 5;
 }
 .indicedenavegacion .directorio .menu .opciones-menu .Conexiones li a::after{
-    content: "";
     position:absolute;
     left: 0;
     top: 0;
@@ -187,7 +192,7 @@ img{
     width: 100%;
     margin: 0 auto;
     padding: 20px 15px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 380px;
     display: grid;
 }
 @media(min-width: 1020px){
@@ -221,9 +226,10 @@ img{
 .indicedenavegacion .principal .principal-cont .main-destacado{
     background-color: #2f353a;
     border-radius: 5px;
-    width: 320px;
+    width: 270px;
     height: 420px;
     position: relative;
+    padding-right: 20px;
 }
 .indicedenavegacion .principal .principal-cont .main-destacado .titulo-destacado{
     border-bottom: 1px solid white;
@@ -246,7 +252,7 @@ img{
 }
 .indicedenavegacion .principal .principal-cont .main-destacado .animes-destacado ul>li a{
     display: block;
-    padding: 10px 85px 10px 15px;
+    padding: 10px 15px 10px 15px;
     position: relative;
     white-space: nowrap;
     -ms-text-overflow: ellipsis;
@@ -277,7 +283,7 @@ img{
 }
 .indicedenavegacion .principal .principal-cont .main-destacado .foto-anime .titulo{
     position: relative;
-    color: green;
+    color: blue;
     padding: 20px 10px 0;
 }
 .indicedenavegacion .principal .principal-cont .main-destacado .foto-anime .titulo h2{
@@ -286,47 +292,21 @@ img{
     line-height: 30px;
     padding: 5px 0;
     margin-bottom: 0;
-    color: #3b4248;
+    color: white;
 }
 @media(min-width){
     .indicedenavegacion .principal .principal-cont .main-destacado .foto-anime .titulo .imagenes{
     position: absolute;
     right: 0;
     top: 20px;
+    padding-left: 20px;
     }
 }
 .indicedenavegacion .principal .principal-cont .main-destacado .foto-anime .titulo .imagenes{
     padding-top: 15px;
     font-size: 0;
 }        
-            .dropdown{ 
-                display: inline-block; 
-                position: relative;
-                width: 10%;
-                height: auto;
-                text-align: center;
-            }
-            .dropdown-content {
-                text-align: center;
-                display: none;
-                position: absolute;
-                width: 30%;
-                background-color: #2f353a;
-                color: white;
-            }
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            .dropdown-content a {
-                display: block;
-                color: #000000;
-                padding: 5px;
-                text-decoration: none;
-            }
-            .dropdown-content a:hover {
-                color: #FFFFFF;
-                background-color: #00A4BD;
-            }
+            
     .columna{
         float: left;
         width: 33%;
@@ -337,3 +317,6 @@ img{
         clear: both;
         display: table;
     }
+.h2{
+    color: #FFFFFF;
+}
