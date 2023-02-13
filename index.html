@@ -1,12 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="esp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Trabajo 2º Trimestre Lenguaje de Marcas" content="anime, initial-scale=1.0">
+    <title>Proyecto 2º Trimestre</title>
+    <script src="https://kit.fontawesome.com/05535acec9.js" crossorigin="anonymous"></script>
 </head>
+<link rel="stylesheet" href="2ºTrimestre Css.css">
+<!--division 1: barra de los anks a facebook, instagram y twiter-->
+<!--division 2: division de animes en scroll-->
+<!--division 3: division de capitulos de los animes-->
 <body>
-    
+    <div class="indicedenavegacion">
+        <header>
+            <nav class="directorio">
+                <div class="Logo">
+                    <img class="Logo" src="Imagenes/LogoPagina.png" alt="NubeDragon">
+                </div>
+                <div class="menu">
+                    <div class="opciones-menu">
+                        <ul class="Lista1">
+                            <li>
+                                <a href="">Inicio</a>
+                            </li>
+                        </ul>
+                        <div class="busqueda">
+                            <form action="" method="get">
+                                <input type="text" name="q" id="" placeholder="Search...">
+                                <button>
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <ul class="Conexiones">
+                            <li>
+                                <a href="" class="facebook"><img src="Imagenes/FacebookLogo.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="" class="instagram"><img src="Imagenes/Instagramfoto.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="" class="twitter"><img src="Imagenes/TwitterLogo.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="principal">
+            <div class="principal-cont margen-principal">
+                <div class="main-destacado">
+                    <div class="titulo-destacado">
+                        <h1 >ANIMES</h1>
+                    </div>
+                    <div class="animes-destacado">
+                        <ul>
+                            <li>
+                                <!-- Se abre la página de detalle que convertirá del XML del anime que se pasa por parámetro en HTML -->
+                                <a href="detalleAnime.html?nombreAnime=Naruto" class="ejemplos" target="_blank">Naruto</a>
+                            </li>
+                            <li>
+                                <a href="detalleAnime.html?nombreAnime=Mazinger Z" class="ejemplos" target="_blank">Mazinger Z</a>
+                            </li>
+                            <li>
+                                <a href="detalleAnime.html?nombreAnime=Dragon Ball Z" class="ejemplos" target="_blank">Dragon Ball Z</a>
+                            </li>
+                            <li>
+                                <a href="detalleAnime.html?nombreAnime=Dragon Ball" class="ejemplos" target="_blank">Dragon Ball</a>
+                            </li>
+                            <li>
+                                <a href="detalleAnime.html?nombreAnime=Ranma 1/2" class="ejemplos" target="_blank">Ranma 1/2</a>
+                            </li>
+                            <li>
+                                <a href="detalleAnime.html?nombreAnime=Captain Tsubasa" class="ejemplos" target="_blank">Captain Tsubasa</a>
+                            </li>
+                            <li>
+                                <a href="detalleAnime.html?nombreAnime=Seinto Seiya (Saint Seiya)" class="ejemplos" target="_blank">Seinto Seiya (Saint Seiya)</a>
+                            </li>
+                            <li>
+                                <a href="detalleAnime.html?nombreAnime=Legend of galactic heroes" class="ejemplos" target="_blank">Legend of galactic heroes</a>
+                            </li>
+                            <li>
+                                <a href="detalleAnime.html?nombreAnime=Rurouni Kenshin" class="ejemplos" target="_blank">Rurouni Kenshin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foto-anime">
+                    <h2 style="color: yellow;">Lo mejor del anime</h2>
+                    <div class="titulo">
+                        <div class="imagenes">
+                            <div class="fila">
+                                <div class="columna">
+                                    <a href="detalleAnime.html?nombreAnime=Naruto" target="_blank"><img src="Imagenes/EL cometa rojo.JPG" alt="CometaRojo" class="a"></a>
+                                </div>
+                                <div class="columna">
+                                    <a href="detalleAnime.html?nombreAnime=Legend of galactic heroes" target="_blank"><img src="Imagenes/legendofgalacticheroeslogo.PNG" alt="CometaRojo" class="a"></a>
+                                </div>
+                                <div class="columna">
+                                    <a href="detalleAnime.html?nombreAnime=Seinto Seiya (Saint Seiya)"  target="_blank"><img src="Imagenes/SaintSeya.PNG" alt="CometaRojo" class="a"></a>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna">
+                                    <a href="detalleAnime.html?nombreAnime=Captain Tsubasa" target="_blank"><img src="Imagenes/CaptainTubasa(logo).PNG" alt="" class="a"></a>
+                                </div>
+                                <div class="columna">
+                                    <a href="detalleAnime.html?nombreAnime=Dragon Ball" target="_blank"><img src="Imagenes/dragonball.PNG" alt="" class="a"></a>
+                                </div>
+                                <div class="columna">
+                                    <a href="detalleAnime.html?nombreAnime=Rurouni Kenshin"  target="_blank"><img src="Imagenes/kenshin.PNG" alt="" class="a"></a>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna">
+                                    <a href="detalleAnime.html?nombreAnime=Ranma 1/2"><img src="Imagenes/Ranma_logo.PNG" alt="CometaRojo" class="a"></a>
+                                </div>
+                                <div class="columna"><a href="detalleAnime.html?nombreAnime=Naruto"  target="_blank"><img src="Imagenes/naruto.PNG" alt=""></a></div>
+                                <div class="columna"><a href="detalleAnime.html?nombreAnime=Mazinger Z"  target="_blank"><img src="Imagenes/mazinguerZlogo.jpg" alt=""></a></div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna"></div>
+                                <div class="columna"></div>
+                                <div class="columna"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+
 </body>
+<footer>
+    <!--se pueden hacer consultas en el html-->
+</footer>
 </html>
