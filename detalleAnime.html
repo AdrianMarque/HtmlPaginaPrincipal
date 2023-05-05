@@ -1,24 +1,50 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<html xmlns:ns1="http://www.example.org">
-  <head>
-    <link rel="stylesheet" href="2ºTrimestre Css.css"/>
-    <style>
-          /* Estilos para la tabla */
-          .tabla-detalle {
-            border-collapse: collapse;
-            margin: 20px 0;
-            width: 100%;
-          }
-          .tabla-detalle th, .tabla-detalle td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-          }
-          .tabla-detalle th {
-            background-color: #ddd;
-            font-weight: bold;
-          }
-        </style>
-  </head>
-  <body/>
+﻿<html>
+	<body>
+		<script type="text/javascript">
+			// Obtenemos la dirección URL
+			var queryString = window.location.search;
+
+			// Obtenemos el parámetro nombreAnime que viene en la URL
+			var urlParams = new URLSearchParams(queryString);
+			var nombreAnime = urlParams.get('nombreAnime');
+
+
+			// Obtenemos el XML
+			xml = loadXMLDoc("BibliotecaAnime.xml");
+
+			// Obtenemos el XSL
+			xsl = loadXMLDoc("BibliotecaAnime.xsl");
+
+			if (document.implementation && document.implementation.createDocument) {
+				xsltProcessor = new XSLTProcessor();
+				xsltProcessor.importStylesheet(xsl);
+				
+				// Al XSL le pasamos el parámetro nombreAnime con el valor que nos viene en la URL
+				xsltProcessor.setParameter(null, "nombreAnime", nombreAnime);
+
+				console.log(xml);
+				// Hacemos la transformación del XML en el documento HTML utilizando el XSL (parémetro incluido)
+				resultDocument = xsltProcessor.transformToDocument(xml, document);
+				
+				// Transformamos el documento HTML en un string
+				var serializer = new XMLSerializer();
+				var transformed = serializer.serializeToString(resultDocument.documentElement);
+
+				// Pintamos el string HTML en pantalla
+				document.write(transformed);
+			}
+
+			function loadXMLDoc(filename) {
+				if (window.ActiveXObject || "ActiveXObject" in window) {
+					xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+				} else {
+					xhttp = new XMLHttpRequest();
+				}
+				xhttp.open("GET", filename, false);
+				xhttp.send("");
+				return xhttp.responseXML;
+			}
+		</script>
+
+	</body>
 </html>
