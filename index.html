@@ -1,178 +1,188 @@
 <html lang="esp">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Trabajo 2º Trimestre Lenguaje de Marcas" content="anime, initial-scale=1.0">
     <title>Proyecto 2º Trimestre</title>
     <script src="https://kit.fontawesome.com/05535acec9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-xxxxxxxxxx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-xxxxxxxxxx"
+        crossorigin="anonymous">
     <style>
         /*Estilos de el toggle switch*/
         .switch {
-          position: relative;
-          display: inline-block;
-          width: 60px;
-          height: 34px;
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
         }
-    
+
         .switch input {
-          opacity: 0;
-          width: 0;
-          height: 0;
+            opacity: 0;
+            width: 0;
+            height: 0;
         }
-    
+
         .slider {
-          position: absolute;
-          cursor: pointer;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: #ccc;
-          border-radius: 34px;
-          transition: .4s;
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 34px;
+            transition: .4s;
         }
-    
+
         .slider:before {
-          position: absolute;
-          content: "";
-          height: 26px;
-          width: 26px;
-          left: 4px;
-          bottom: 4px;
-          background-color: white;
-          border-radius: 50%;
-          transition: .4s;
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            border-radius: 50%;
+            transition: .4s;
         }
-    
+
         input:checked+.slider {
-          background-color: #2196F3;
+            background-color: #2196F3;
         }
-    
+
         input:focus+.slider {
-          box-shadow: 0 0 1px #2196F3;
+            box-shadow: 0 0 1px #2196F3;
         }
-    
+
         input:checked+.slider:before {
-          transform: translateX(26px);
+            transform: translateX(26px);
         }
-    
+
         /* Optional */
         .slider.round {
-          border-radius: 34px;
+            border-radius: 34px;
         }
-    
+
         .slider.round:before {
-          border-radius: 50%;
+            border-radius: 50%;
         }
-    
+
         .switch {
-          position: relative;
-          display: inline-block;
-          width: 60px;
-          height: 34px;
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
         }
-    
+
         .switch input {
-          opacity: 0;
-          width: 0;
-          height: 0;
+            opacity: 0;
+            width: 0;
+            height: 0;
         }
-    
+
         .slider {
-          position: absolute;
-          cursor: pointer;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: #ccc;
-          border-radius: 34px;
-          transition: .4s;
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 34px;
+            transition: .4s;
         }
-    
+
         .slider:before {
-          position: absolute;
-          content: "";
-          height: 26px;
-          width: 26px;
-          left: 4px;
-          bottom: 4px;
-          background-color: white;
-          border-radius: 50%;
-          transition: .4s;
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            border-radius: 50%;
+            transition: .4s;
         }
-    
+
         input:checked+.slider {
-          background-color: #2196F3;
+            background-color: #2196F3;
         }
-    
+
         input:focus+.slider {
-          box-shadow: 0 0 1px #2196F3;
+            box-shadow: 0 0 1px #2196F3;
         }
-    
+
         input:checked+.slider:before {
-          transform: translateX(26px);
+            transform: translateX(26px);
         }
+
         /*Estilos de la zona de enlace*/
         /*Generalizados*/
         a {
-          color: white;
+            color: white;
         }
+
+        body{
+            background-image: url(FONDO.jpg) ;
+        }
+
         /*Estilos de la zona de navegacion*/
         /*Generalizados*/
         nav {
-          background-color: #333;
-          overflow: hidden;
+            background-color: #333;
+            overflow: hidden;
         }
-    
+
         nav.directorio {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         nav a {
-          float: left;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
-    
+
         nav a:hover {
-          background-color: blue;
-          color: black;
+            background-color: blue;
+            color: black;
         }
+
         /*Estilos de la zona de listas*/
         /*Generalizados*/
-        li{
+        li {
             list-style: none;
         }
-    
+
         /*estilos especificos */
-        .toggle{
-            padding-right: 2% ;
+        .toggle {
+            padding-right: 2%;
         }
-        .Logo{
+
+        .Logo {
             width: 20%;
             height: 15%;
             padding-left: 20%;
         }
-    
-    
-        .menu{
+
+        .menu {
             text-align: center;
             padding-bottom: 1%;
         }
-    
+
         .opciones-menu {
             display: inline-block;
             padding-top: 1%;
             padding-right: 10%;
-            
+
         }
-        .directorio .opciones-menu form input{
+
+        .directorio .opciones-menu form input {
             background-color: black;
             border-radius: 20px;
             border: 0;
@@ -180,13 +190,14 @@
             height: 40px;
             display: block;
             padding: 5px 15px;
-            width: 100%;    
+            width: 100%;
             color: inherit;
             font: inherit;
             outline: none;
             color: white;
         }
-        .directorio .opciones-menu form button{
+
+        .directorio .opciones-menu form button {
             background-color: transparent;
             position: relative;
             padding: 0;
@@ -201,24 +212,23 @@
             border-radius: 4px;
             font-weight: 700;
             outline: none;
-    }
-    
+        }
     </style>
     <script>
         function toggleBackground() {
-      var body = document.querySelector("body");
-      var switchBtn = document.querySelector("input[type='checkbox']");
-      var bg = document.querySelector(".bg");
+            var body = document.querySelector("body");
+            var switchBtn = document.querySelector("input[type='checkbox']");
+            var bg = document.querySelector(".bg");
 
-      if (switchBtn.checked) {
-        body.style.backgroundColor = "#333";
-        bg.style.backgroundColor = "#2196F3";
-      } else {
-        body.style.backgroundColor = "#eee";
-        bg.style.backgroundColor = "#ccc";
-      }
-    }
-</script>
+            if (switchBtn.checked) {
+                body.style.backgroundColor = "#333";
+                bg.style.backgroundColor = "#2196F3";
+            } else {
+                body.style.backgroundColor = "#eee";
+                bg.style.backgroundColor = "#ccc";
+            }
+        }
+    </script>
 </head>
 <!--<link rel="stylesheet" href="2ºTrimestre Css.css">-->
 <!--division 1: barra de los anks a facebook, instagram y twiter-->
@@ -227,37 +237,37 @@
 
 
 <body>
-        <header>
-            <nav class="directorio">
-                <div>
-                    <img class="Logo" src="Imagenes/LogoPagina.png" alt="NubeDragon">
-                </div>
-                <div>
-                    <a href="">Inicio</a>
-                </div>
-                <div>
-                    <a href="">Animes</a>
-                </div>
-                <div>
-                    <a href="">Directorio Anime</a>
-                </div>
-                <div class="opciones-menu">
-                    <form action="" method="get">
-                        <input type="text" name="q" id="" placeholder="Search...">
-                        <button>
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </form>
-                </div>
-                <div class="toggle">
-                    <label class="switch">
-                        <input type="checkbox" onchange="toggleBackground()">
-                        <span class="slider"></span>
-                    </label>
-                </div>
-            </nav>
-        </header>
-        <!--<ul class="Conexiones">
+    <header>
+        <nav class="directorio">
+            <div>
+                <img class="Logo" src="Imagenes/LogoPagina.png" alt="NubeDragon">
+            </div>
+            <div>
+                <a href="">Inicio</a>
+            </div>
+            <div>
+                <a href="">Animes</a>
+            </div>
+            <div>
+                <a href="">Directorio Anime</a>
+            </div>
+            <div class="opciones-menu">
+                <form action="" method="get">
+                    <input type="text" name="q" id="" placeholder="Search...">
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="toggle">
+                <label class="switch">
+                    <input type="checkbox" onchange="toggleBackground()">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <!--<ul class="Conexiones">
             <li>
                 <a href="" class="facebook"><img src="Imagenes/FacebookLogo.png" alt=""></a>
             </li>
@@ -268,92 +278,105 @@
                 <a href="" class="twitter"><img src="Imagenes/TwitterLogo.png" alt=""></a>
             </li>
         </ul>-->
-        <section class="principal">
-            <div class="principal-cont margen-principal">
-                <div class="main-destacado">
-                    <div class="titulo-destacado">
-                        <h1 >ANIMES</h1>
-                    </div>
-                    <div class="animes-destacado">
-                        <ul>
-                            <li>
-                                <!-- Se abre la página de detalle que convertirá del XML del anime que se pasa por parámetro en HTML -->
-                                <a href="detalleAnime.html?nombreAnime=Naruto" class="ejemplos">Naruto</a>
-                            </li>
-                            <li>
-                                <a href="detalleAnime.html?nombreAnime=Mazinger Z" class="ejemplos">Mazinger Z</a>
-                            </li>
-                            <li>
-                                <a href="detalleAnime.html?nombreAnime=Dragon Ball Z" class="ejemplos">Dragon Ball Z</a>
-                            </li>
-                            <li>
-                                <a href="detalleAnime.html?nombreAnime=Dragon Ball" class="ejemplos">Dragon Ball</a>
-                            </li>
-                            <li>
-                                <a href="detalleAnime.html?nombreAnime=Ranma 1/2" class="ejemplos">Ranma 1/2</a>
-                            </li>
-                            <li>
-                                <a href="detalleAnime.html?nombreAnime=Captain Tsubasa" class="ejemplos">Captain Tsubasa</a>
-                            </li>
-                            <li>
-                                <a href="detalleAnime.html?nombreAnime=Seinto Seiya (Saint Seiya)" class="ejemplos">Seinto Seiya (Saint Seiya)</a>
-                            </li>
-                            <li>
-                                <a href="detalleAnime.html?nombreAnime=Legend of galactic heroes" class="ejemplos">Legend of galactic heroes</a>
-                            </li>
-                            <li>
-                                <a href="detalleAnime.html?nombreAnime=Rurouni Kenshin" class="ejemplos">Rurouni Kenshin</a>
-                            </li>
-                        </ul>
-                    </div>
+    <section class="principal">
+        <div class="principal-cont margen-principal">
+            <div class="main-destacado">
+                <div class="titulo-destacado">
+                    <h1>ANIMES</h1>
                 </div>
-                <div class="foto-anime">
-                    <h2 style="color: yellow;">Lo mejor del anime</h2>
-                    <div class="titulo">
-                        <div class="imagenes">
-                            <div class="fila">
-                                <div class="columna">
-                                    <a href="detalleAnime.html?nombreAnime=Naruto"><img src="Imagenes/EL cometa rojo.JPG" alt="CometaRojo" class="a"></a>
-                                </div>
-                                <div class="columna">
-                                    <a href="detalleAnime.html?nombreAnime=Legend of galactic heroes"><img src="Imagenes/legendofgalacticheroeslogo.PNG" alt="CometaRojo" class="a"></a>
-                                </div>
-                                <div class="columna">
-                                    <a href="detalleAnime.html?nombreAnime=Seinto Seiya (Saint Seiya)" ><img src="Imagenes/SaintSeya.PNG" alt="CometaRojo" class="a"></a>
-                                </div>
+                <div class="animes-destacado">
+                    <ul>
+                        <li>
+                            <!-- Se abre la página de detalle que convertirá del XML del anime que se pasa por parámetro en HTML -->
+                            <a href="detalleAnime.html?nombreAnime=Naruto" class="ejemplos">Naruto</a>
+                        </li>
+                        <li>
+                            <a href="detalleAnime.html?nombreAnime=Mazinger Z" class="ejemplos">Mazinger Z</a>
+                        </li>
+                        <li>
+                            <a href="detalleAnime.html?nombreAnime=Dragon Ball Z" class="ejemplos">Dragon Ball Z</a>
+                        </li>
+                        <li>
+                            <a href="detalleAnime.html?nombreAnime=Dragon Ball" class="ejemplos">Dragon Ball</a>
+                        </li>
+                        <li>
+                            <a href="detalleAnime.html?nombreAnime=Ranma 1/2" class="ejemplos">Ranma 1/2</a>
+                        </li>
+                        <li>
+                            <a href="detalleAnime.html?nombreAnime=Captain Tsubasa" class="ejemplos">Captain Tsubasa</a>
+                        </li>
+                        <li>
+                            <a href="detalleAnime.html?nombreAnime=Seinto Seiya (Saint Seiya)" class="ejemplos">Seinto
+                                Seiya (Saint Seiya)</a>
+                        </li>
+                        <li>
+                            <a href="detalleAnime.html?nombreAnime=Legend of galactic heroes" class="ejemplos">Legend of
+                                galactic heroes</a>
+                        </li>
+                        <li>
+                            <a href="detalleAnime.html?nombreAnime=Rurouni Kenshin" class="ejemplos">Rurouni Kenshin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foto-anime">
+                <h2 style="color: yellow;">Lo mejor del anime</h2>
+                <div class="titulo">
+                    <div class="imagenes">
+                        <div class="fila">
+                            <div class="columna">
+                                <a href="detalleAnime.html?nombreAnime=Naruto"><img src="Imagenes/EL cometa rojo.JPG"
+                                        alt="CometaRojo" class="a"></a>
                             </div>
-                            <div class="fila">
-                                <div class="columna">
-                                    <a href="detalleAnime.html?nombreAnime=Captain Tsubasa"><img src="Imagenes/CaptainTubasa(logo).PNG" alt="" class="a"></a>
-                                </div>
-                                <div class="columna">
-                                    <a href="detalleAnime.html?nombreAnime=Dragon Ball"><img src="Imagenes/dragonball.PNG" alt="" class="a"></a>
-                                </div>
-                                <div class="columna">
-                                    <a href="detalleAnime.html?nombreAnime=Rurouni Kenshin" aria-label="ver detalles kenshin" ><img src="Imagenes/kenshin.PNG" alt="" class="a"></a>
-                                </div>
+                            <div class="columna">
+                                <a href="detalleAnime.html?nombreAnime=Legend of galactic heroes"><img
+                                        src="Imagenes/legendofgalacticheroeslogo.PNG" alt="CometaRojo" class="a"></a>
                             </div>
-                            <div class="fila">
-                                <div class="columna">
-                                    <a href="detalleAnime.html?nombreAnime=Ranma 1/2"><img src="Imagenes/Ranma_logo.PNG" alt="CometaRojo" class="a"></a>
-                                </div>
-                                <div class="columna"><a href="detalleAnime.html?nombreAnime=Naruto" ><img src="Imagenes/naruto.PNG" alt=""></a></div>
-                                <div class="columna"><a href="detalleAnime.html?nombreAnime=Mazinger Z" ><img src="Imagenes/mazinguerZlogo.jpg" alt=""></a></div>
+                            <div class="columna">
+                                <a href="detalleAnime.html?nombreAnime=Seinto Seiya (Saint Seiya)"><img
+                                        src="Imagenes/SaintSeya.PNG" alt="CometaRojo" class="a"></a>
                             </div>
-                            <div class="fila">
-                                <div class="columna"></div>
-                                <div class="columna"></div>
-                                <div class="columna"></div>
+                        </div>
+                        <div class="fila">
+                            <div class="columna">
+                                <a href="detalleAnime.html?nombreAnime=Captain Tsubasa"><img
+                                        src="Imagenes/CaptainTubasa(logo).PNG" alt="" class="a"></a>
                             </div>
+                            <div class="columna">
+                                <a href="detalleAnime.html?nombreAnime=Dragon Ball"><img src="Imagenes/dragonball.PNG"
+                                        alt="" class="a"></a>
+                            </div>
+                            <div class="columna">
+                                <a href="detalleAnime.html?nombreAnime=Rurouni Kenshin"
+                                    aria-label="ver detalles kenshin"><img src="Imagenes/kenshin.PNG" alt=""
+                                        class="a"></a>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="columna">
+                                <a href="detalleAnime.html?nombreAnime=Ranma 1/2"><img src="Imagenes/Ranma_logo.PNG"
+                                        alt="CometaRojo" class="a"></a>
+                            </div>
+                            <div class="columna"><a href="detalleAnime.html?nombreAnime=Naruto"><img
+                                        src="Imagenes/naruto.PNG" alt=""></a></div>
+                            <div class="columna"><a href="detalleAnime.html?nombreAnime=Mazinger Z"><img
+                                        src="Imagenes/mazinguerZlogo.jpg" alt=""></a></div>
+                        </div>
+                        <div class="fila">
+                            <div class="columna"></div>
+                            <div class="columna"></div>
+                            <div class="columna"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
+        </div>
+        <div>
 
-            </div>
-        </section>
-        <footer>
-        </footer>
+        </div>
+    </section>
+    <footer>
+    </footer>
 </body>
+
 </html>
