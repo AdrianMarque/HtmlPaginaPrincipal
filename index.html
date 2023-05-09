@@ -123,8 +123,8 @@
             color: white;
         }
 
-        body{
-            background-image: url(Fondo.jpg) ;
+        body {
+            background-image: url(Fondo.jpg);
             background-size: cover;
             background-attachment: fixed;
         }
@@ -152,26 +152,31 @@
 
         nav a:hover {
             background-color: blue;
-            color: black;
+            color: white;
         }
 
         /*Estilos de la zona de listas*/
         /*Generalizados*/
-        .one{
+        .one {
             width: 50%;
         }
-        .two{
+
+        .two {
             width: 30%;
         }
-        .three{
+
+        .three {
             width: 30%;
         }
-        .four{
+
+        .four {
             width: 30%;
         }
-        .five{
+
+        .five {
             width: 30%;
         }
+
         li {
             list-style: none;
         }
@@ -229,22 +234,89 @@
             font-weight: 700;
             outline: none;
         }
+
         /*Estilos de las conexiones*/
-        .conexiones{
+        .conexiones {
             width: 20%;
             height: 20%;
             padding: 3%;
         }
-        .conexiones .image{
+
+        .animes-destacado h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .conexiones .image {
             width: 80%;
             height: 80%;
         }
-        
+
+        /*Ajustes de los div*/
+        .principal-cont {
+            display: flex;
+            width: 100%;
+        }
+
         /*Estilos de la lista de anime*/
-        .animes-destacado{
-            width: 20%;
-            background-color: #333;
-            
+        .animes-destacado {
+            background-color: rgba(51, 51, 51, 0.5);
+        }
+
+        .animes-destacado ul {
+            opacity: 1;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 3%;
+        }
+
+        .animes-destacado li {
+            padding-bottom: 5%;
+        }
+
+        .animes-destacado a {
+            text-decoration: none;
+        }
+
+        .animes-destacado a:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        /*Estilos de las imagenes de anime*/
+        .foto-anime {
+            width: 70%;
+        }
+
+        .tabla {
+            margin-right: 0;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            text-align: center;
+            float: center;
+            display: table;
+
+            border-collapse: collapse;
+            padding-left: 10%;
+
+        }
+
+        .fila {
+            display: table-row;
+        }
+
+        .columna {
+            margin-left: auto;
+            margin-right: 0;
+            align-items: right;
+            align-content: right;
+            align-self: right;
+            text-align: right;
+            float: right;
+            display: table-cell;
+            border: 1px solid black;
+            padding: 5px;
         }
     </style>
     <script>
@@ -286,16 +358,16 @@
             </div>
             <div class="opciones-menu">
                 <form action="" method="get">
-                    <input type="text" name="q" id="" placeholder="Search...">
+                    <input type="text" name="q" placeholder="Search...">
                     <button>
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
             </div>
             <div class="five">
-                <a href="" class="conexiones"><img class= "image" src="Imagenes/FacebookLogo.png" alt=""></a>
-                <a href="" class="conexiones"><img class= "image" src="Imagenes/Instagramfoto.jpg" alt=""></a>
-                <a href="" class="conexiones"><img class= "image" src="Imagenes/TwitterLogo.png" alt=""></a>
+                <a href="" class="conexiones"><img class="image" src="Imagenes/FacebookLogo.png" alt=""></a>
+                <a href="" class="conexiones"><img class="image" src="Imagenes/Instagramfoto.jpg" alt=""></a>
+                <a href="" class="conexiones"><img class="image" src="Imagenes/TwitterLogo.png" alt=""></a>
             </div>
             <div class="toggle">
                 <label class="switch">
@@ -305,14 +377,11 @@
             </div>
         </nav>
     </header>
-    <!---->
     <section class="principal">
-        <div class="principal-cont margen-principal">
+        <div class="principal-cont">
             <div class="main-destacado">
-                <div class="titulo-destacado">
-                    <h1>ANIMES</h1>
-                </div>
                 <div class="animes-destacado">
+                    <h1>ANIMES</h1>
                     <ul>
                         <li>
                             <!-- Se abre la página de detalle que convertirá del XML del anime que se pasa por parámetro en HTML -->
@@ -348,11 +417,11 @@
                 </div>
             </div>
             <div class="foto-anime">
-                <h2 style="color: yellow;">Lo mejor del anime</h2>
                 <div class="titulo">
-                    <div class="imagenes">
+                    <div class="tabla">
+                        <h1>Lo mejor del anime</h1>
                         <div class="fila">
-                            <div class="columna">
+                            <div class="columna" style="width: 339;">
                                 <a href="detalleAnime.html?nombreAnime=Naruto"><img src="Imagenes/EL cometa rojo.JPG"
                                         alt="CometaRojo" class="a"></a>
                             </div>
