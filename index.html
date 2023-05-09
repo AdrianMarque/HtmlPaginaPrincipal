@@ -6,12 +6,205 @@
     <title>Proyecto 2º Trimestre</title>
     <script src="https://kit.fontawesome.com/05535acec9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-xxxxxxxxxx" crossorigin="anonymous">
-</head>
-<!--<link rel="stylesheet" href="2ºTrimestre Css.css">-->
-<!--division 1: barra de los anks a facebook, instagram y twiter-->
-<!--division 2: division de animes en scroll-->
-<!--division 3: division de capitulos de los animes-->
-<script>
+    <style>
+        /*Estilos de el toggle switch*/
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+        }
+    
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+    
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          border-radius: 34px;
+          transition: .4s;
+        }
+    
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          border-radius: 50%;
+          transition: .4s;
+        }
+    
+        input:checked+.slider {
+          background-color: #2196F3;
+        }
+    
+        input:focus+.slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+    
+        input:checked+.slider:before {
+          transform: translateX(26px);
+        }
+    
+        /* Optional */
+        .slider.round {
+          border-radius: 34px;
+        }
+    
+        .slider.round:before {
+          border-radius: 50%;
+        }
+    
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+        }
+    
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+    
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          border-radius: 34px;
+          transition: .4s;
+        }
+    
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          background-color: white;
+          border-radius: 50%;
+          transition: .4s;
+        }
+    
+        input:checked+.slider {
+          background-color: #2196F3;
+        }
+    
+        input:focus+.slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+    
+        input:checked+.slider:before {
+          transform: translateX(26px);
+        }
+        /*Estilos de la zona de enlace*/
+        /*Generalizados*/
+        a {
+          color: white;
+        }
+        /*Estilos de la zona de navegacion*/
+        /*Generalizados*/
+        nav {
+          background-color: #333;
+          overflow: hidden;
+        }
+    
+        nav.directorio {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav a {
+          float: left;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+    
+        nav a:hover {
+          background-color: blue;
+          color: black;
+        }
+        /*Estilos de la zona de listas*/
+        /*Generalizados*/
+        li{
+            list-style: none;
+        }
+    
+        /*estilos especificos */
+        .toggle{
+            padding-right: 2% ;
+        }
+        .Logo{
+            width: 20%;
+            height: 15%;
+            padding-left: 20%;
+        }
+    
+    
+        .menu{
+            text-align: center;
+            padding-bottom: 1%;
+        }
+    
+        .opciones-menu {
+            display: inline-block;
+            padding-top: 1%;
+            padding-right: 10%;
+            
+        }
+        .directorio .opciones-menu form input{
+            background-color: black;
+            border-radius: 20px;
+            border: 0;
+            margin-bottom: 0;
+            height: 40px;
+            display: block;
+            padding: 5px 15px;
+            width: 100%;    
+            color: inherit;
+            font: inherit;
+            outline: none;
+            color: white;
+        }
+        .directorio .opciones-menu form button{
+            background-color: transparent;
+            position: relative;
+            padding: 0;
+            right: 0;
+            top: 0;
+            margin-bottom: 0;
+            border: 0;
+            box-shadow: none;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 4px;
+            font-weight: 700;
+            outline: none;
+    }
+    
+    </style>
+    <script>
         function toggleBackground() {
       var body = document.querySelector("body");
       var switchBtn = document.querySelector("input[type='checkbox']");
@@ -26,204 +219,13 @@
       }
     }
 </script>
-<style>
-    /*Estilos de el toggle switch*/
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 60px;
-      height: 34px;
-    }
-
-    .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      border-radius: 34px;
-      transition: .4s;
-    }
-
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      border-radius: 50%;
-      transition: .4s;
-    }
-
-    input:checked+.slider {
-      background-color: #2196F3;
-    }
-
-    input:focus+.slider {
-      box-shadow: 0 0 1px #2196F3;
-    }
-
-    input:checked+.slider:before {
-      transform: translateX(26px);
-    }
-
-    /* Optional */
-    .slider.round {
-      border-radius: 34px;
-    }
-
-    .slider.round:before {
-      border-radius: 50%;
-    }
-
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 60px;
-      height: 34px;
-    }
-
-    .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      border-radius: 34px;
-      transition: .4s;
-    }
-
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      border-radius: 50%;
-      transition: .4s;
-    }
-
-    input:checked+.slider {
-      background-color: #2196F3;
-    }
-
-    input:focus+.slider {
-      box-shadow: 0 0 1px #2196F3;
-    }
-
-    input:checked+.slider:before {
-      transform: translateX(26px);
-    }
-    /*Estilos de la zona de enlace*/
-    /*Generalizados*/
-    a {
-      color: white;
-    }
-    /*Estilos de la zona de navegacion*/
-    /*Generalizados*/
-    nav {
-      background-color: #333;
-      overflow: hidden;
-    }
-
-    nav.directorio {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    nav a {
-      float: left;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      background-color: blue;
-      color: black;
-    }
-    /*Estilos de la zona de listas*/
-    /*Generalizados*/
-    li{
-        list-style: none;
-    }
-
-    /*estilos especificos */
-    .toggle{
-        padding-right: 2% ;
-    }
-    .Logo{
-        width: 20%;
-        height: 15%;
-        padding-left: 20%;
-    }
+</head>
+<!--<link rel="stylesheet" href="2ºTrimestre Css.css">-->
+<!--division 1: barra de los anks a facebook, instagram y twiter-->
+<!--division 2: division de animes en scroll-->
+<!--division 3: division de capitulos de los animes-->
 
 
-    .menu{
-        text-align: center;
-        padding-bottom: 1%;
-    }
-
-    .opciones-menu {
-        display: inline-block;
-        padding-top: 1%;
-        padding-right: 10%;
-        
-    }
-    .directorio .opciones-menu form input{
-        background-color: black;
-        border-radius: 20px;
-        border: 0;
-        margin-bottom: 0;
-        height: 40px;
-        display: block;
-        padding: 5px 15px;
-        width: 100%;    
-        color: inherit;
-        font: inherit;
-        outline: none;
-        color: white;
-    }
-    .directorio .opciones-menu form button{
-        background-color: transparent;
-        position: relative;
-        padding: 0;
-        right: 0;
-        top: 0;
-        margin-bottom: 0;
-        border: 0;
-        box-shadow: none;
-        color: white;
-        cursor: pointer;
-        display: inline-block;
-        border-radius: 4px;
-        font-weight: 700;
-        outline: none;
-}
-
-</style>
 <body>
         <header>
             <nav class="directorio">
@@ -328,7 +330,7 @@
                                     <a href="detalleAnime.html?nombreAnime=Dragon Ball"><img src="Imagenes/dragonball.PNG" alt="" class="a"></a>
                                 </div>
                                 <div class="columna">
-                                    <a href="detalleAnime.html?nombreAnime=Rurouni Kenshin" ><img src="Imagenes/kenshin.PNG" alt="" class="a"></a>
+                                    <a href="detalleAnime.html?nombreAnime=Rurouni Kenshin" aria-label="ver detalles kenshin" ><img src="Imagenes/kenshin.PNG" alt="" class="a"></a>
                                 </div>
                             </div>
                             <div class="fila">
@@ -352,12 +354,6 @@
             </div>
         </section>
         <footer>
-
         </footer>
-    
-
 </body>
-<footer>
-    <!--se pueden hacer consultas en el html-->
-</footer>
 </html>
