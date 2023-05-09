@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Animes</title>
+  <style>
+    a {
+      color: white;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: red;
+      color: black;
+    }
+
+    /* Estilos para resaltar el enlace del menú correspondiente a la página actual */
+    .active {
+      background-color: #4CAF50;
+    }
+
+    div {
+      background-color: #333;
+      overflow: hidden;
+      width: 15%;
+      margin: 0 auto;
+      float: left;
+    }
+
+    div a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 34px;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      border-radius: 50%;
+      transition: .4s;
+    }
+
+    input:checked+.slider {
+      background-color: #2196F3;
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked+.slider:before {
+      transform: translateX(26px);
+    }
+
+    /* Optional */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 34px;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      border-radius: 50%;
+      transition: .4s;
+    }
+
+    input:checked+.slider {
+      background-color: #2196F3;
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked+.slider:before {
+      transform: translateX(26px);
+    }
+
+    /* Estilos para el cuerpo de la página */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      background-color: #eee;
+      /* color de fondo predeterminado */
+      transition: .4s;
+    }
+
+    /* Estilos para el interruptor en la posición 'activado' */
+    input:checked+.slider~.bg {
+      background-color: #2196F3;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#" class="active">Inicio</a>
+    <a href="#">Animes populares</a>
+    <a href="#">Manga</a>
+    <a href="#">Foro</a>
+    <a href="Pagina_Web.html">
+      <img src="Imagenes/LogoPagina.png" alt="NubeDragon" width="auto" height="auto">
+    </a>
+    <label class="switch">
+      <input type="checkbox" onchange="toggleBackground()">
+      <span class="slider"></span>
+    </label>
+  </nav>
+  <h1>Ultimos animes</h1>
+  <div id="animes-destacado">
+    <ul id="anime-list">
+      <li>
+        <!-- Se abre la página de detalle que convertirá del XML del anime que se pasa por parámetro en HTML -->
+        <a href="Naruto.html" class="ejemplos" target="_blank">Naruto</a>
+      </li>
+      <li>
+        <a href="detalleAnime.html?nombreAnime=Mazinger Z" class="ejemplos" target="_blank">Mazinger Z</a>
+      </li>
+      <li>
+        <a href="detalleAnime.html?nombreAnime=Dragon Ball Z" class="ejemplos" target="_blank">Dragon Ball Z</a>
+      </li>
+      <li>
+        <a href="detalleAnime.html?nombreAnime=Dragon Ball" class="ejemplos" target="_blank">Dragon Ball</a>
+      </li>
+      <li>
+        <a href="detalleAnime.html?nombreAnime=Ranma 1/2" class="ejemplos" target="_blank">Ranma 1/2</a>
+      </li>
+      <li>
+        <a href="detalleAnime.html?nombreAnime=Captain Tsubasa" class="ejemplos" target="_blank">Captain Tsubasa</a>
+      </li>
+      <li>
+        <a href="detalleAnime.html?nombreAnime=Seinto Seiya (Saint Seiya)" class="ejemplos" target="_blank">Seinto Seiya
+          (Saint Seiya)</a>
+      </li>
+      <li>
+        <a href="detalleAnime.html?nombreAnime=Legend of galactic heroes" class="ejemplos" target="_blank">Legend of
+          galactic heroes</a>
+      </li>
+      <li>
+        <a href="detalleAnime.html?nombreAnime=Rurouni Kenshin" class="ejemplos" target="_blank">Rurouni Kenshin</a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    // Resaltar el enlace del menú correspondiente a la página actual
+    const links = document.getElementsByTagName("a");
+    for (let i = 0; i < links.length; i++) {
+      if (links[i].href === window.location.href) {
+        links[i].classList.add("active");
+        break;
+      }
+    }
+    function toggleBackground() {
+      var body = document.querySelector("body");
+      var switchBtn = document.querySelector("input[type='checkbox']");
+      var bg = document.querySelector(".bg");
+
+      if (switchBtn.checked) {
+        body.style.backgroundColor = "#333";
+        bg.style.backgroundColor = "#2196F3";
+      } else {
+        body.style.backgroundColor = "#eee";
+        bg.style.backgroundColor = "#ccc";
+      }
+    }
+  </script>
+</body>
+
+</html>
