@@ -411,8 +411,8 @@
                         </table>
                         <div id="modo-cine" class="modo-cine">
                             <xsl:element name="iframe"> 
-                                        <xsl:attribute name="width">560</xsl:attribute>
-                                        <xsl:attribute name="height">315</xsl:attribute>
+                                        <xsl:attribute name="width">80%</xsl:attribute>
+                                        <xsl:attribute name="height">80%</xsl:attribute>
                                         <xsl:attribute name="src"><xsl:value-of select="Trailer" /></xsl:attribute>
                                         <xsl:attribute name="frameborder">0</xsl:attribute>
                                         <xsl:comment/>
