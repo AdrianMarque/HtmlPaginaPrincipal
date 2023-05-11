@@ -38,7 +38,7 @@
                         color: #d7d7d7;
                     }
                     .modo-cine {
-                        visibility: visible;
+                        visibility: hidden;
                         background: rgba(0, 0, 0, 0.9);
                         position: absolute;
                         width: 100%;
@@ -410,6 +410,7 @@
                                 </td>
                             </tr>
                         </table>
+                        <!-- Modo Cine con botones y funciones añadida a dichos botones.-->
                         <div id="modo-cine" class="modo-cine">
                             <xsl:element name="iframe"> 
                                         <xsl:attribute name="width">80%</xsl:attribute>
@@ -419,6 +420,7 @@
                                         <xsl:comment/>
                                     </xsl:element>
                                     <br/>
+                                      <!-- Botones y funcion añadida para desactivar el modo cine-->
                                 <input type="button" class="boton" onclick="desactivarModoCine()" value="Salir del modo cine"/>
                         </div>
                     </xsl:if>
@@ -426,12 +428,16 @@
             </body>
             <script src="Script.js"></script>
             <script type="text/javascript">
-             <!--Funciones JavaScript para activar/desactivar el modo cine-->
+                //Funciones JavaScript para activar/desactivar el modo cine
+
                 function activarModoCine() {
+                    //Se obtiene elemento del DOM, busca la etiqueta "modo-cine" en el codigo html y la mete en una variable
                     var modoCine = document.getElementById("modo-cine");
                     modoCine.style.visibility = "visible";
                 }
+
                 function desactivarModoCine() {
+                    //Se obtiene elemento del DOM, busca la etiqueta "modo-cine" en el codigo html y la mete en una variable
                     var modoCine = document.getElementById("modo-cine");
                     modoCine.style.visibility = "hidden";
                 }
