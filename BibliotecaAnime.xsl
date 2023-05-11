@@ -20,6 +20,7 @@
                     .tabla-detalle th {
                         background-color: #ddd;
                         font-weight: bold;
+                        }
                         
                              /*Estilos de el toggle switch*/
         .switch {
