@@ -14,6 +14,7 @@
                         margin: 20px 0;
                         width: 100%;
                         background: linear-gradient(#3470a9, #11477a);
+                        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
                     }
                     .tabla-detalle th, .tabla-detalle td {
                         border: 1px solid #979797;
@@ -24,7 +25,8 @@
                     .tabla-detalle th {
                         background-color: #ddd;
                         font-weight: bold;
-                        }
+                        background-color: #333;
+                    }
                     .tabla-detalle td {
                         background: none;
                     }   
