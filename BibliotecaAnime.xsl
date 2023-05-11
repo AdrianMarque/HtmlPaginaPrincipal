@@ -377,6 +377,7 @@
                     </xsl:if>
                 </xsl:for-each>
             </body>
+            <script src="Script.js"></script>
         </html>
     </xsl:template>
 </xsl:stylesheet>
