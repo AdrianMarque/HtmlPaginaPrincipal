@@ -31,9 +31,8 @@
                         background: none;
                     }   
                     .boton {
-                        background-color: #ddd;
-                        color:
-                        padding: 20;
+                        background-color: #333;
+                        padding: 20px;
                         margin: 20px;
                         font-size: 18px;
                         color: #d7d7d7;
