@@ -387,13 +387,36 @@
                                         <xsl:attribute name="frameborder">0</xsl:attribute>
                                         <xsl:comment/>
                                     </xsl:element>
+                                    <br/>
+                                    <input type="button" onclick="activarModoCine()" value="Ver en modo cine"/>
                                 </td>
                             </tr>
                         </table>
+                        <div id="modo-cine" style="visibility: hidden; background: black">
+                            <xsl:element name="iframe"> 
+                                        <xsl:attribute name="width">560</xsl:attribute>
+                                        <xsl:attribute name="height">315</xsl:attribute>
+                                        <xsl:attribute name="src"><xsl:value-of select="Trailer" /></xsl:attribute>
+                                        <xsl:attribute name="frameborder">0</xsl:attribute>
+                                        <xsl:comment/>
+                                    </xsl:element>
+                                    <br/>
+                                <input type="button" onclick="desactivarModoCine()" value="Salir del modo cine"/>
+                        </div>
                     </xsl:if>
                 </xsl:for-each>
             </body>
             <script src="Script.js"></script>
+            <script type="text/javascript">
+                function activarModoCine() {
+                    var modoCine = document.getElementById("modo-cine");
+                    modoCine.style.visibility = "visible";
+                }
+                function desactivarModoCine() {
+                    var modoCine = document.getElementById("modo-cine");
+                    modoCine.style.visibility = "hidden";
+                }
+            </script>
         </html>
     </xsl:template>
 </xsl:stylesheet>
