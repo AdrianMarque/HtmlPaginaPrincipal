@@ -4,7 +4,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <link rel="stylesheet" href="2ºTrimestre Css.css" />
+                <link rel="stylesheet" href="Toggle.css" />
                 <style>
                     /* Estilos para la tabla */
                     .tabla-detalle {
