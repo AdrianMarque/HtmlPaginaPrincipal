@@ -299,13 +299,14 @@
                 </style>
             </head>
             <body>
-             <header>
+
+                <xsl:for-each select="biblioteca/anime">
+                    <xsl:if test="Nombre=$nombreAnime">
+                                 <header>
         <!-- Cabecero - Menu de navegación-->
         <!-- TODO copiar y pegar en el xsl para la transformación dentro del html del xsl-->
         <nav class="directorio">
-            <div class="one">
-                <img class="Logo" src="Imagenes/LogoPagina.png" alt="NubeDragon">
-            </div>
+    
             <div class="two">
                 <a href="">Inicio</a>
             </div>
@@ -315,26 +316,15 @@
             <div class="four">
                 <a href="">Directorio Anime</a>
             </div>
-            <div class="opciones-menu">
-                <form method="get">
-                    <input type="text" name="q" placeholder="Search...">
-                </form>
-            </div>
+
             <div class="five">
-                <a href="" class="conexiones"><img class="image" src="Imagenes/FacebookLogo.png" alt=""></a>
-                <a href="" class="conexiones"><img class="image" src="Imagenes/Instagramfoto.jpg" alt=""></a>
-                <a href="" class="conexiones"><img class="image" src="Imagenes/TwitterLogo.png" alt=""></a>
+
             </div>
             <div class="toggle">
-                <label class="switch">
-                    <input type="checkbox" id="backgroundSwitch">
-                    <span class="slider round"></span>
-                </label>
+   
             </div>
         </nav>
     </header>
-                <xsl:for-each select="biblioteca/anime">
-                    <xsl:if test="Nombre=$nombreAnime">
                         <table class="tabla-detalle">
                             <tr>
                                 <th>Nombre</th>
