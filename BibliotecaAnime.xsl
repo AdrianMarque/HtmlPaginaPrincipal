@@ -30,6 +30,23 @@
                     .tabla-detalle td {
                         background: none;
                     }   
+                    .boton {
+                        background-color: #ddd;
+                        color:
+                        padding: 20;
+                        margin: 20px;
+                        font-size: 18px;
+                        color: #d7d7d7;
+                    }
+                    .modo-cine {
+                        visibility: visible;
+                        background: rgba(0, 0, 0, 0.9);
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0px;
+                        text-align: center;
+                    }
                         
                     /*Estilos de el toggle switch*/
                     .switch {
@@ -388,11 +405,11 @@
                                         <xsl:comment/>
                                     </xsl:element>
                                     <br/>
-                                    <input type="button" onclick="activarModoCine()" value="Ver en modo cine"/>
+                                    <input type="button" class="boton" onclick="activarModoCine()" value="Ver en modo cine"/>
                                 </td>
                             </tr>
                         </table>
-                        <div id="modo-cine" style="visibility: hidden; background: black">
+                        <div id="modo-cine" class="modo-cine">
                             <xsl:element name="iframe"> 
                                         <xsl:attribute name="width">560</xsl:attribute>
                                         <xsl:attribute name="height">315</xsl:attribute>
@@ -401,7 +418,7 @@
                                         <xsl:comment/>
                                     </xsl:element>
                                     <br/>
-                                <input type="button" onclick="desactivarModoCine()" value="Salir del modo cine"/>
+                                <input type="button" class="boton" onclick="desactivarModoCine()" value="Salir del modo cine"/>
                         </div>
                     </xsl:if>
                 </xsl:for-each>
