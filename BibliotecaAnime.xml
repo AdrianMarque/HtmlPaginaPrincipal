@@ -21,7 +21,7 @@
         </Sinopsis>
     <Criticas/>
     <Finalizado>Si</Finalizado>
-    <Trailer>https://youtu.be/embed/u1lgk_fsDkA</Trailer>
+    <Trailer>https://youtube.com/embed/u1lgk_fsDkA</Trailer>
   </anime>
   <anime>
     <Nombre>Mazinger Z</Nombre>
@@ -63,7 +63,7 @@
         </Sinopsis>
     <Criticas/>
     <Finalizado>Sí</Finalizado>
-    <Trailer>https://www.youtube.com/embed/watch?v=XGdlAsHgNgY</Trailer>
+    <Trailer>https://www.youtube.com/embed/XGdlAsHgNgY</Trailer>
   </anime>
   <anime>
     <Nombre>Dragon Ball</Nombre>
@@ -81,7 +81,7 @@
         </Sinopsis>
     <Criticas/>
     <Finalizado>Sí</Finalizado>
-    <Trailer>https://www.youtube.com/embed/watch?v=FJqGirLjQn4</Trailer>
+    <Trailer>https://www.youtube.com/embed/FJqGirLjQn4</Trailer>
   </anime>
   <anime>
     <Nombre>Ranma 1/2</Nombre>
@@ -159,18 +159,6 @@
         </Sinopsis>
     <Criticas/>
     <Finalizado>Sí</Finalizado>
-    <Trailer/>
-  </anime>
-  <anime>
-    <Nombre/>
-    <Director/>
-    <Año/>
-    <Episodios/>
-    <Seiyuu/>
-    <Genero/>
-    <Sinopsis/>
-    <Criticas/>
-    <Finalizado/>
     <Trailer/>
   </anime>
 </biblioteca>
