@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="BibliotecaAnime.xsl"?>
- <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="biblioteca.xsd">
   <anime>
     <Nombre>Naruto</Nombre>
     <Director>Masashi Kishimoto (Creador), Hayato Date, Akira Shimizu, Atsushi Nigorikawa, Atsushi Wakabayashi, Hayato Goda, 
             Hiroshi Kimura, Kazuyoshi Yokota, Kiyomu Fukuda, Masaaki Kumagai, Masahiko Murata, Masayuki Iimura, Mitsutaka Noshitani, 
             Rion Kujo, Shigenori Kageyama, Shinji Satoh, Shuuji Miyahara, Toshiya Niidome, Tsuyoshi Matsumoto, Yuki Hayashi, Yuki Kinoshita
-        </Director>
+    </Director>
     <Año>2002</Año>
     <Episodios>220 episodios</Episodios>
     <Seiyuu>Junko Takeuchi</Seiyuu>
@@ -18,7 +18,7 @@
             de su aldea (Hokage). Será para él una tarea difícil ya que cuando era solo un bebé le fué confiado en su interior el poder de un ser 
             malvado, que antaño causó grandes males en su aldea (Konoha) y el cual irá poco a poco descubriendo y dominando. Por culpa de ese poder 
             Naruto pasa una dura infancia con desprecio y negación por parte de los vecinos de su aldea...
-        </Sinopsis>
+    </Sinopsis>
     <Criticas/>
     <Finalizado>Si</Finalizado>
     <Trailer>https://youtube.com/embed/u1lgk_fsDkA</Trailer>
@@ -27,12 +27,12 @@
     <Nombre>Mazinger Z</Nombre>
     <Director>Tomoharu Katsumata, Bonjin Nagaki, Katsuhisa Yamada, Kouichi Sasaki, Masamune Ochiai, Masayuki Akehi, Nobuo Onuki, Nobutaka 
             Nishizawa, Takashi Kuoka, Takeshi Tamiya, Tokushige Shirane, Tsunekiyo Otani, Yasuo Yamayoshi, Yoshikatsu Kasai, Yugo Serikawa
-        </Director>
+    </Director>
     <Año>1972</Año>
     <Episodios>92 episodios</Episodios>
     <Seiyuu/>
     <Genero>Serie de TV. Animación. Acción. Fantástico. Ciencia ficción | Robots. Manga
-        </Genero>
+    </Genero>
     <Sinopsis>Dos arqueólogos encuentran los restos de una civilización antigua que era capaz de construir robots gigantes. Uno de ellos, 
             el doctor Hell (doctor Infierno), cree que si consigue construir unos robots semejantes, entonces podría gobernar al mundo. El 
             otro arqueólogo, el doctor Kabuto, se niega a secundar sus malvados planes y, a partir de ese momento, se convierten en enemigos. 
@@ -41,10 +41,10 @@
             aprende a pilotar a Mazinger gracias a la ayuda del ayudante de su abuelo, el doctor Yomi, que también ha construido un robot 
             llamado Afrodita A, que será pilotado por su hija Sayaka Yomi. Mazinger Z y Afrodita se enfrentarán entonces a los malvados robots 
             de Hell, con el objetivo de salvar al mundo. 
-        </Sinopsis>
+    </Sinopsis>
     <Criticas/>
     <Finalizado>Si</Finalizado>
-    <Trailer>-</Trailer>
+    <Trailer>https://www.youtube.com/embed/joEetudPr9s</Trailer>
   </anime>
   <anime>
     <Nombre>Dragon Ball Z</Nombre>
@@ -60,7 +60,7 @@
             Para poder vencer a los nuevos enemigos que irán surgiendo, Goku y sus amigos tendrán que viajar por otros planetas e incluso al cielo y al infierno.
             Cada enemigo será más fuerte que el anterior,
             por lo que tendrán que entrenar muy duro para poder derrotarlos además de que se les irán uniendo nuevos personajes que les ayudarán a vencerlos.
-        </Sinopsis>
+    </Sinopsis>
     <Criticas/>
     <Finalizado>Sí</Finalizado>
     <Trailer>https://www.youtube.com/embed/XGdlAsHgNgY</Trailer>
@@ -78,7 +78,7 @@
             se adentrará en la búsqueda de las esferas del dragon y desafiará a todo tipo de villanos para convertirse en el hombre más fuerte del mundo. 
             También se hará especial incapié al Budokai Tenkaichi, un gran Torneo Mundial de Artes Marciales en el que los mejores luchadores de todo el Mundo se darán cita,
             batiéndose en Duelo a fin de demostrar quien es el mas fuerte luchador sobre la Tierra.
-        </Sinopsis>
+    </Sinopsis>
     <Criticas/>
     <Finalizado>Sí</Finalizado>
     <Trailer>https://www.youtube.com/embed/FJqGirLjQn4</Trailer>
@@ -94,10 +94,10 @@
             quien es un apasionado de las artes marciales y las ha estado practicando desde muy joven junto a su padre.
             En uno de sus entrenamientos, por accidente, 
             tanto él como su padre caen en unos estanques conocidos como estanques encantados de Jusenkyo
-</Sinopsis>
+    </Sinopsis>
     <Criticas/>
     <Finalizado>Sí</Finalizado>
-    <Trailer/>
+    <Trailer>https://www.youtube.com/embed/xMJbmdqucfo</Trailer>
   </anime>
   <anime>
     <Nombre>Captain Tsubasa</Nombre>
@@ -110,55 +110,56 @@
             El chaval tiene la ilusión de jugar con el equipo más famoso de esa ciudad: el Shutetsu,
             en el cual milita el mejor portero de la liga nacional: Genzo Wakabayashi (Benji). Sin embargo, el protagonista tendrá que entrenar duro y jugar agotadores partidos 
             -incluso lesionado- para alcanzar su sueño: ganar el campeonato nacional de fútbol
-        </Sinopsis>
+    </Sinopsis>
     <Criticas/>
     <Finalizado>si</Finalizado>
-    <Trailer/>
-  </anime>
-  <anime>
-    <Nombre>Seinto Seiya (Saint Seiya)</Nombre>
-    <Director>Kōzō Morishita, Kazuhito Kikuchi</Director>
-    <Año>1986</Año>
-    <Episodios>114</Episodios>
-    <Seiyuu>Hori, Hideyuki,Suzuoki, Hirotaka,Furuya toru,Touma, Yumi</Seiyuu>
-    <Genero> Acción. Fantástico | Artes marciales</Genero>
-    <Sinopsis>Según cuenta la leyenda, unos jóvenes guerreros poseedores de grandes habilidades son los principales responsables de proteger a Atenea, 
+    <Trailer>
+      <Trailer>
+      </anime>
+      <anime>
+        <Nombre>Seinto Seiya (Saint Seiya)</Nombre>
+        <Director>Kōzō Morishita, Kazuhito Kikuchi</Director>
+        <Año>1986</Año>
+        <Episodios>114</Episodios>
+        <Seiyuu>Hori, Hideyuki,Suzuoki, Hirotaka,Furuya toru,Touma, Yumi</Seiyuu>
+        <Genero> Acción. Fantástico | Artes marciales</Genero>
+        <Sinopsis>Según cuenta la leyenda, unos jóvenes guerreros poseedores de grandes habilidades son los principales responsables de proteger a Atenea, 
             la diosa de la guerra. Años más tarde, la princesa Saori Kido, reencarnación de la Diosa, se encuentra en peligro y necesita de esa legendaria protección
         </Sinopsis>
-    <Criticas/>
-    <Finalizado>Sí</Finalizado>
-    <Trailer/>
-  </anime>
-  <anime>
-    <Nombre>Legend of galactic heroes</Nombre>
-    <Director> Keizo Shimizu, Kenichi Maeda</Director>
-    <Año>1992</Año>
-    <Episodios>110 </Episodios>
-    <Seiyuu/>
-    <Genero>Drama. Ciencia ficción | Aventura espacial</Genero>
-    <Sinopsis>Ginga Eiyuu Densetsu cuenta la historia de dos bandos, el Imperio Galáctico y la Alianza de Planetas Libres. En el bando del Imperio Galactico se encuentra el Almirante Rheinhardt Von Museal,
+        <Criticas/>
+        <Finalizado>Sí</Finalizado>
+        <Trailer>https://www.youtube.com/embed/BLXHuZ-1C_4</Trailer>
+      </anime>
+      <anime>
+        <Nombre>Legend of galactic heroes</Nombre>
+        <Director> Keizo Shimizu, Kenichi Maeda</Director>
+        <Año>1992</Año>
+        <Episodios>110 </Episodios>
+        <Seiyuu/>
+        <Genero>Drama. Ciencia ficción | Aventura espacial</Genero>
+        <Sinopsis>Ginga Eiyuu Densetsu cuenta la historia de dos bandos, el Imperio Galáctico y la Alianza de Planetas Libres. En el bando del Imperio Galactico se encuentra el Almirante Rheinhardt Von Museal,
             hermano de la protegida del Emperador y en el bando de la Alianza se encuentra el Almirante Yang Wenli. Ambos tienen una visión estratégica impresionante que los lleva a enfrentarse una y otra vez en las batallas. 
             Sin embargo cada uno es repudiado por sus superiores por motivos distintos. La batalla de los Héroes comienza aquí
         </Sinopsis>
-    <Criticas/>
-    <Finalizado>Si</Finalizado>
-    <Trailer/>
-  </anime>
-  <anime>
-    <Nombre>Rurouni Kenshin</Nombre>
-    <Director>Kazuhiro Furuhashi, Kaeko Sakamoto, Hiroshi Morioka, Yûji Mitsuya, Richard Epcar</Director>
-    <Año>1996</Año>
-    <Episodios>95</Episodios>
-    <Seiyuu> </Seiyuu>
-    <Genero>Animación. Acción. Fantástico. Comedia. Drama | Siglo XIX. Samuráis. Manga. Amistad. Venganza. Japón feudal</Genero>
-    <Sinopsis>Sinopsis: A mediados del siglo XIX, la Revolución Meji significó el final del Shogunato y el principio de una nueva era para Japón.
+        <Criticas/>
+        <Finalizado>Si</Finalizado>
+        <Trailer>https://www.youtube.com/embed/ReIFoP8T4q8</Trailer>
+      </anime>
+      <anime>
+        <Nombre>Rurouni Kenshin</Nombre>
+        <Director>Kazuhiro Furuhashi, Kaeko Sakamoto, Hiroshi Morioka, Yûji Mitsuya, Richard Epcar</Director>
+        <Año>1996</Año>
+        <Episodios>95</Episodios>
+        <Seiyuu></Seiyuu>
+        <Genero>Animación. Acción. Fantástico. Comedia. Drama | Siglo XIX. Samuráis. Manga. Amistad. Venganza. Japón feudal</Genero>
+        <Sinopsis>Sinopsis: A mediados del siglo XIX, la Revolución Meji significó el final del Shogunato y el principio de una nueva era para Japón.
             La victoria del bando reformista no hubiera sido posible sin la espada de un joven e implacable asesino apodado Hitokiri Battosai que tras el final del conflicto desapareció sin dejar rastro... Diez años después, 
             el legendario Hitokiri Battosai ha reaparecido en Tokio asesinando a todo el que se cruza en su camino. Cuando su escuela se ve implicada en los crímines, la joven Kaoru Kamiya, propietaria y muestra del dojo Kamiya, 
             sale a su encuentro. En su ayuda acude Kenshin Himura, un espadachín vagabundo que defiende a los más débiles con su espada de filo invertido. 
             ¿Es posible que este guerrero pelirrojo de aspecto inofensivo sea el verdadero Battosai? Aquí comienza la leyenda de Kenshin, el último samurai.
         </Sinopsis>
-    <Criticas/>
-    <Finalizado>Sí</Finalizado>
-    <Trailer/>
-  </anime>
-</biblioteca>
+        <Criticas/>
+        <Finalizado>Sí</Finalizado>
+        <Trailer>https://www.youtube.com/embed/gZGmDKxEp-I</Trailer>
+      </anime>
+    </biblioteca>
