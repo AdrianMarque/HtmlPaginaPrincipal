@@ -4,7 +4,6 @@
     <xsl:template match="/">
         <html>
             <head>
-
                 <link rel="stylesheet" href="Toggle.css" />
                  <style>
                     /* Estilos para la tabla */
@@ -30,6 +29,7 @@
                     .tabla-detalle td {
                         background: none;
                     }   
+                    /* Estilos para los botones y el modo cine*/
                     .boton {
                         background-color: #333;
                         padding: 20px;
@@ -46,7 +46,7 @@
                         top: 0px;
                         text-align: center;
                     }
-                        
+                /*--------------------------------------*/
                     /*Estilos de el toggle switch*/
                     .switch {
                         position: relative;
@@ -396,6 +396,7 @@
                             <tr>
                                 <th>Trailer</th>
                                 <td>
+                                <!--Visualizador embebido de youtube -->
                                     <xsl:element name="iframe"> 
                                         <xsl:attribute name="width">560</xsl:attribute>
                                         <xsl:attribute name="height">315</xsl:attribute>
@@ -404,6 +405,7 @@
                                         <xsl:comment/>
                                     </xsl:element>
                                     <br/>
+                                    <!-- Botones y funcion añadida para el modo cine-->
                                     <input type="button" class="boton" onclick="activarModoCine()" value="Ver en modo cine"/>
                                 </td>
                             </tr>
@@ -424,6 +426,7 @@
             </body>
             <script src="Script.js"></script>
             <script type="text/javascript">
+             <!--Funciones JavaScript para activar/desactivar el modo cine-->
                 function activarModoCine() {
                     var modoCine = document.getElementById("modo-cine");
                     modoCine.style.visibility = "visible";
