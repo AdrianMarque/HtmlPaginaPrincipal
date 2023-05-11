@@ -1,0 +1,11 @@
+body {
+    background-image: url('Fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+  }
+  
+  body.dark-background {
+    background-image: url('FONDO1.jpg');
+  }
+  
