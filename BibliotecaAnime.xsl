@@ -147,8 +147,9 @@
                     }
 
                     nav a:hover {
-                        background-color: blue;
+                        background-color: #1f578c;
                         color: white;
+                        
                     }
 
                     /*Estilos de la zona de listas*/
