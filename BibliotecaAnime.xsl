@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xmlns:ns1="http://www.example.org">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
+    xmlns:ns1="http://www.example.org">
     <xsl:param name="nombreAnime" />
     <xsl:template match="/">
         <html>
             <head>
                 <link rel="stylesheet" href="Toggle.css" />
-                 <style>
+                <style>
                     /* Estilos para la tabla */
                     .tabla-detalle { 
                         font-family: Arial, Helvetica, sans-serif;
@@ -322,87 +323,119 @@
                         max-width: 80%;
                         max-height: 80%;
                     }
+
+                     #contador {
+                      font-size: 24px;
+                      font-weight: bold;
+                      color: #f00;
+                    }
                     
                 </style>
             </head>
             <body>
-                           <header>
-        <!-- Cabecera - Menu de navegación-->
-        <!-- TODO copiar y pegar en el xsl para la transformación dentro del html del xsl-->
-              <nav class="directorio">
-                <div class="one">
-                  <a href="index.html"><img class="Logo" src="Imagenes/LogoPagina.png" alt="NubeDragon"></img></a>
-                 </div>
-            <div class="two">
-                <a href="index.html">Inicio</a>
-            </div>
-            <div class="three">
-                <a href="">Animes</a>
-            </div>
-            <div class="four">
-                <a href="">Directorio Anime</a>
-            </div>
-            <div class="opciones-menu">
-                <form method="get">
-                    <input type="text" name="q" placeholder="Search..."></input>
-                </form>
-            </div>
-            <div class="five">
-                <a href="www.facebook.com" class="conexiones"><img class="image" src="Imagenes/FacebookLogo.png" alt=""></img></a>
-                <a href="www.instagram.com" class="conexiones"><img class="image" src="Imagenes/Instagramfoto.jpg" alt=""></img></a>
-                <a href="www.twitter.com" class="conexiones"><img class="image" src="Imagenes/TwitterLogo.png" alt=""></img></a>
-            </div>
-            <div class="toggle">
-                <label class="switch">
-                    <input type="checkbox" id="backgroundSwitch"></input>
-                    <span class="slider round"></span>
-                </label>
-            </div>
-        </nav>
-    </header>
+                <header>
+                    <!-- Cabecera - Menu de navegación-->
+                    <!-- TODO copiar y pegar en el xsl para la transformación dentro del html del xsl-->
+                    <nav class="directorio">
+                        <div class="one">
+                            <a href="index.html">
+                                <img class="Logo" src="Imagenes/LogoPagina.png" alt="NubeDragon"></img>
+                            </a>
+                        </div>
+                        <div class="two">
+                            <a href="index.html">Inicio</a>
+                        </div>
+                        <div class="three">
+                            <a href="">Animes</a>
+                        </div>
+                        <div class="four">
+                            <a href="">Directorio Anime</a>
+                        </div>
+                        <div class="opciones-menu">
+                            <form method="get">
+                                <input type="text" name="q" placeholder="Search..."></input>
+                            </form>
+                        </div>
+                        <div class="five">
+                            <a href="www.facebook.com" class="conexiones">
+                                <img class="image" src="Imagenes/FacebookLogo.png" alt=""></img>
+                            </a>
+                            <a href="www.instagram.com" class="conexiones">
+                                <img class="image" src="Imagenes/Instagramfoto.jpg" alt=""></img>
+                            </a>
+                            <a href="www.twitter.com" class="conexiones">
+                                <img class="image" src="Imagenes/TwitterLogo.png" alt=""></img>
+                            </a>
+                        </div>
+                        <div class="toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="backgroundSwitch"></input>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </nav>
+                </header>
                 <xsl:for-each select="biblioteca/anime">
                     <xsl:if test="Nombre=$nombreAnime">
                         <table class="tabla-detalle">
                             <tr>
                                 <th>Nombre</th>
-                                <td><xsl:value-of select="Nombre" /></td>
+                                <td>
+                                    <xsl:value-of select="Nombre" />
+                                </td>
                             </tr>
                             <tr>
                                 <th>Director</th>
-                                <td><xsl:value-of select="Director" /></td>
+                                <td>
+                                    <xsl:value-of select="Director" />
+                                </td>
                             </tr>
                             <tr>
                                 <th>Año</th>
-                                <td><xsl:value-of select="Año" /></td>
+                                <td>
+                                    <xsl:value-of select="Año" />
+                                </td>
                             </tr>
                             <tr>
                                 <th>Seiyuu</th>
-                                <td><xsl:value-of select="Seiyuu" /></td>
+                                <td>
+                                    <xsl:value-of select="Seiyuu" />
+                                </td>
                             </tr>
                             <tr>
                                 <th>Genero</th>
-                                <td><xsl:value-of select="Genero" /></td>
+                                <td>
+                                    <xsl:value-of select="Genero" />
+                                </td>
                             </tr>
                             <tr>
                                 <th>Sinopsis</th>
-                                <td><xsl:value-of select="Sinopsis" /></td>
+                                <td>
+                                    <xsl:value-of select="Sinopsis" />
+                                </td>
                             </tr>
                             <tr>
                                 <th>Criticas</th>
-                                <td><xsl:value-of select="Criticas" /></td>
+                                <td>
+                                    <xsl:value-of select="Criticas" />
+                                </td>
                             </tr>
                             <tr>
                                 <th>Finalizado</th>
-                                <td><xsl:value-of select="Finalizado" /></td>
+                                <td>
+                                    <xsl:value-of select="Finalizado" />
+                                </td>
                             </tr>
                             <tr>
                                 <th>Trailer</th>
                                 <td>
-                                <!--Visualizador embebido de youtube -->
-                                    <xsl:element name="iframe"> 
+                                    <!--Visualizador embebido de youtube -->
+                                    <xsl:element name="iframe">
                                         <xsl:attribute name="width">560</xsl:attribute>
                                         <xsl:attribute name="height">315</xsl:attribute>
-                                        <xsl:attribute name="src"><xsl:value-of select="Trailer" /></xsl:attribute>
+                                        <xsl:attribute name="src">
+                                            <xsl:value-of select="Trailer" />
+                                        </xsl:attribute>
                                         <xsl:attribute name="frameborder">0</xsl:attribute>
                                         <xsl:comment/>
                                     </xsl:element>
@@ -414,44 +447,52 @@
                         </table>
                         <!-- Modo Cine con botones y funciones añadida a dichos botones.-->
                         <div id="modo-cine" class="modo-cine">
-                            <xsl:element name="iframe"> 
-                                        <xsl:attribute name="width">80%</xsl:attribute>
-                                        <xsl:attribute name="height">80%</xsl:attribute>
-                                        <xsl:attribute name="src"><xsl:value-of select="Trailer" /></xsl:attribute>
-                                        <xsl:attribute name="frameborder">0</xsl:attribute>
-                                        <xsl:comment/>
-                                    </xsl:element>
-                                    <br/>
-                                      <!-- Botones y funcion añadida para desactivar el modo cine-->
-                                <input type="button" class="boton" onclick="desactivarModoCine()" value="Salir del modo cine"/>
+                            <xsl:element name="iframe">
+                                <xsl:attribute name="width">80%</xsl:attribute>
+                                <xsl:attribute name="height">80%</xsl:attribute>
+                                <xsl:attribute name="src">
+                                    <xsl:value-of select="Trailer" />
+                                </xsl:attribute>
+                                <xsl:attribute name="frameborder">0</xsl:attribute>
+                                <xsl:comment/>
+                            </xsl:element>
+                            <br/>
+                            <!-- Botones y funcion añadida para desactivar el modo cine-->
+                            <input type="button" class="boton" onclick="desactivarModoCine()" value="Salir del modo cine"/>
                         </div>
                     </xsl:if>
                 </xsl:for-each>
-              <p>El próximo estreno es en: <span id="contador"></span></p>
+                <table class="tabla-detalle">
+                    <tr>
+                        <th><p>El próximo capitulo se estrena el día: <span id="contador"></span></p></th>
+                       
+                    </tr>
+                </table>
             </body>
-<script>
-function mostrarContador() {
-  const fechaEstreno = new Date("2023-06-14");
-  const hoy = new Date();
-  const diferencia = fechaEstreno - hoy;
+            <script>
+            function mostrarContador() 
+            {
+                const fechaEstreno = new Date("2023-06-14");
+                const hoy = new Date();
+                const diferencia = fechaEstreno - hoy;
 
-  let segundos = Math.floor(diferencia / 1000);
-  let minutos = Math.floor(segundos / 60);
-  let horas = Math.floor(minutos / 60);
-  let dias = Math.floor(horas / 24);
+                let segundos = Math.floor(diferencia / 1000);
+                let minutos = Math.floor(segundos / 60);
+                let horas = Math.floor(minutos / 60);
+                let dias = Math.floor(horas / 24);
 
-  horas %= 24;
-  minutos %= 60;
-  segundos %= 60;
+                horas %= 24;
+                minutos %= 60;
+                segundos %= 60;
 
-  document.getElementById("contador").textContent = `${dias} días, ${horas} horas, ${minutos} minutos, ${segundos} segundos`;
-  setTimeout(mostrarContador, 1000);
+                document.getElementById("contador").textContent = `${dias} días, ${horas} horas, ${minutos} minutos, ${segundos} segundos`;
+                setTimeout(mostrarContador, 1000);
+            }
+
+        window.onload = function() {
+        mostrarContador();
 }
-
-window.onload = function() {
-  mostrarContador();
-}
-</script>
+            </script>
 
             <script src="Script.js"></script>
             <script type="text/javascript">
