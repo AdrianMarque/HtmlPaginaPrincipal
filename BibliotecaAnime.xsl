@@ -425,7 +425,32 @@
                         </div>
                     </xsl:if>
                 </xsl:for-each>
+              <p>El próximo estreno es en: <span id="contador"></span></p>
             </body>
+<script>
+function mostrarContador() {
+  const fechaEstreno = new Date("2023-06-14");
+  const hoy = new Date();
+  const diferencia = fechaEstreno - hoy;
+
+  let segundos = Math.floor(diferencia / 1000);
+  let minutos = Math.floor(segundos / 60);
+  let horas = Math.floor(minutos / 60);
+  let dias = Math.floor(horas / 24);
+
+  horas %= 24;
+  minutos %= 60;
+  segundos %= 60;
+
+  document.getElementById("contador").textContent = `${dias} días, ${horas} horas, ${minutos} minutos, ${segundos} segundos`;
+  setTimeout(mostrarContador, 1000);
+}
+
+window.onload = function() {
+  mostrarContador();
+}
+</script>
+
             <script src="Script.js"></script>
             <script type="text/javascript">
                 //Funciones JavaScript para activar/desactivar el modo cine
