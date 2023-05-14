@@ -477,22 +477,38 @@
             {
                 //Fecha final
                 const fechaEstreno = new Date("2023-06-14");
+
+                //Fecha actual
                 const hoy = new Date();
+
+                // Calcular la diferencia entre ambas fechas en milisegundos
                 const diferencia = fechaEstreno - hoy;
 
+                //Calcula segundos
                 let segundos = Math.floor(diferencia / 1000);
+
+                //Calcula minutos
                 let minutos = Math.floor(segundos / 60);
+
+                //Calcula Horas
                 let horas = Math.floor(minutos / 60);
+
+                //Calcula Días
                 let dias = Math.floor(horas / 24);
 
+                // Ajustar las horas, minutos y segundos para que no excedan los límites de 24 horas, 60 minutos y 60 segundos
                 horas %= 24;
                 minutos %= 60;
                 segundos %= 60;
 
+                //Muestra el contador en la página
                 document.getElementById("contador").textContent = `${dias} días, ${horas} horas, ${minutos} minutos, ${segundos} segundos`;
+
+                // Actualizar el contador cada segundo
                 setTimeout(mostrarContador, 1000);
             }
 
+        //Iniciar el contador cuando se carga la página
         window.onload = function() {
         mostrarContador();
 }
