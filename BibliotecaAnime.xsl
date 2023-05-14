@@ -325,9 +325,10 @@
                     }
 
                      #contador {
+                      font-family: Arial, Helvetica, sans-serif;  
                       font-size: 24px;
                       font-weight: bold;
-                      color: #f00;
+                      color:#3470a9;
                     }
                     
                 </style>
@@ -464,14 +465,17 @@
                 </xsl:for-each>
                 <table class="tabla-detalle">
                     <tr>
-                        <th><p>El próximo capitulo se estrena el día: <span id="contador"></span></p></th>
-                       
+                        <th>
+                            <p>El próximo capitulo se estrena el día: <span id="contador"></span>
+                            </p>
+                        </th>
                     </tr>
                 </table>
             </body>
             <script>
             function mostrarContador() 
             {
+                //Fecha final
                 const fechaEstreno = new Date("2023-06-14");
                 const hoy = new Date();
                 const diferencia = fechaEstreno - hoy;
