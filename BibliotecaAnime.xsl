@@ -466,7 +466,7 @@
                 <table class="tabla-detalle">
                     <tr>
                         <th>
-                            <p>El próximo capitulo se estrena el día: <span id="contador"></span>
+                            <p>El próximo capitulo se estrena en: <span id="contador"></span>
                             </p>
                         </th>
                     </tr>
