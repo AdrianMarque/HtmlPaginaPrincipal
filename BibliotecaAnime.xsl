@@ -143,11 +143,13 @@
                         text-align: center;
                         padding: 14px 16px;
                         text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
                     }
 
                     nav a:hover {
-                        background-color: blue;
+                        background-color: #1f578c;
                         color: white;
+                        
                     }
 
                     /*Estilos de la zona de listas*/
@@ -346,9 +348,9 @@
                 </form>
             </div>
             <div class="five">
-                <a href="" class="conexiones"><img class="image" src="Imagenes/FacebookLogo.png" alt=""></img></a>
-                <a href="" class="conexiones"><img class="image" src="Imagenes/Instagramfoto.jpg" alt=""></img></a>
-                <a href="" class="conexiones"><img class="image" src="Imagenes/TwitterLogo.png" alt=""></img></a>
+                <a href="www.facebook.com" class="conexiones"><img class="image" src="Imagenes/FacebookLogo.png" alt=""></img></a>
+                <a href="www.instagram.com" class="conexiones"><img class="image" src="Imagenes/Instagramfoto.jpg" alt=""></img></a>
+                <a href="www.twitter.com" class="conexiones"><img class="image" src="Imagenes/TwitterLogo.png" alt=""></img></a>
             </div>
             <div class="toggle">
                 <label class="switch">
